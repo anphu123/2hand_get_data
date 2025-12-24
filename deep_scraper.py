@@ -279,7 +279,7 @@ class DeepScraper:
         try:
             await page.goto(spu_url, timeout=20000, wait_until="domcontentloaded")
             await asyncio.sleep(self.WAIT_PAGE)
-            await self._scroll(page, self.MAX_SCROLL)
+            await self._scroll_until_done(page, max_scrolls=15)
         except Exception as e:
             log("ERR", f"Error: {str(e)[:30]}", 3)
             self.stats["errors"] += 1
@@ -310,7 +310,7 @@ class DeepScraper:
         try:
             await page.goto(spu_url, timeout=20000, wait_until="domcontentloaded")
             await asyncio.sleep(self.WAIT_PAGE)
-            await self._scroll(page, self.MAX_SCROLL)
+            await self._scroll_until_done(page, max_scrolls=15)
         except Exception as e:
             log("ERR", f"Error: {str(e)[:30]}", 2)
             self.stats["errors"] += 1
@@ -357,10 +357,33 @@ class DeepScraper:
             pass
     
     async def _scroll(self, page, times: int = 3):
-        """Scroll page to load more content"""
+        """Simple scroll - kept for compatibility"""
         for _ in range(times):
             await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
             await asyncio.sleep(self.WAIT_SCROLL)
+    
+    async def _scroll_until_done(self, page, max_scrolls: int = 20):
+        """Smart scroll - continue scrolling until no new products loaded"""
+        last_count = len(self.products)
+        no_new_count = 0
+        
+        for i in range(max_scrolls):
+            # Scroll to bottom
+            await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+            await asyncio.sleep(0.8)  # Wait for API response
+            
+            current_count = len(self.products)
+            
+            if current_count > last_count:
+                # New products loaded, reset counter
+                no_new_count = 0
+                last_count = current_count
+            else:
+                no_new_count += 1
+                
+            # Stop if 3 scrolls with no new products
+            if no_new_count >= 3:
+                break
     
     def _print_banner(self):
         print()
