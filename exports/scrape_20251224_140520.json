@@ -1,0 +1,513 @@
+{
+  "products": [
+    {
+      "id": 199683,
+      "name": "黑色 羊皮 机车包 25 300295-D94JN-1000",
+      "title": "黑色 羊皮 机车包 25 300295-D94JN-1000",
+      "subTitle": "光面|羊皮",
+      "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/4628732679429972796.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "光面, 羊皮",
+      "seriesCode": "230720185003322",
+      "seriesName": "Classic City",
+      "seriesImage": "https://sr.aihuishou.com/image/9173933517940939643.png"
+    },
+    {
+      "id": 199681,
+      "name": "黑色 羊皮 机车包 29 433353-D94JN-1000",
+      "title": "黑色 羊皮 机车包 29 433353-D94JN-1000",
+      "subTitle": "光面|羊皮",
+      "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/1474991360330511529.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "光面, 羊皮",
+      "seriesCode": "230720185003322",
+      "seriesName": "Classic City",
+      "seriesImage": "https://sr.aihuishou.com/image/9173933517940939643.png"
+    },
+    {
+      "id": 199680,
+      "name": "灰色 羊皮 机车包 30 432831-AQ41G-1360",
+      "title": "灰色 羊皮 机车包 30 432831-AQ41G-1360",
+      "subTitle": "纯色|羊皮",
+      "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/3383953590894980152.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "纯色, 羊皮",
+      "seriesCode": "230720185003322",
+      "seriesName": "Classic City",
+      "seriesImage": "https://sr.aihuishou.com/image/9173933517940939643.png"
+    },
+    {
+      "id": 199679,
+      "name": "黑色 羊皮 机车包 30 431621-D94JG-1000",
+      "title": "黑色 羊皮 机车包 30 431621-D94JG-1000",
+      "subTitle": "光面|羊皮",
+      "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/2686613278643773590.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "光面, 羊皮",
+      "seriesCode": "230720185003322",
+      "seriesName": "Classic City",
+      "seriesImage": "https://sr.aihuishou.com/image/9173933517940939643.png"
+    },
+    {
+      "id": 199682,
+      "name": "粉色 羊皮 机车包 20.5 505982-AQ41N-5901",
+      "title": "粉色 羊皮 机车包 20.5 505982-AQ41N-5901",
+      "subTitle": "粒面|羊皮",
+      "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/4909603621517978900.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "粒面, 羊皮",
+      "seriesCode": "230720185003322",
+      "seriesName": "Classic City",
+      "seriesImage": "https://sr.aihuishou.com/image/9173933517940939643.png"
+    },
+    {
+      "id": 199685,
+      "name": "军绿色 羊皮 机车包 22 8230582ABV83258",
+      "title": "军绿色 羊皮 机车包 22 8230582ABV83258",
+      "subTitle": "光面|羊皮",
+      "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/308919204918299976.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "光面, 羊皮",
+      "seriesCode": "230720185003322",
+      "seriesName": "Classic City",
+      "seriesImage": "https://sr.aihuishou.com/image/9173933517940939643.png"
+    },
+    {
+      "id": 199684,
+      "name": "森林绿 牛皮 机车包 22 638524-15Y47-3011",
+      "title": "森林绿 牛皮 机车包 22 638524-15Y47-3011",
+      "subTitle": "粒面|牛皮",
+      "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/5961977537044844670.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "粒面, 牛皮",
+      "seriesCode": "230720185003322",
+      "seriesName": "Classic City",
+      "seriesImage": "https://sr.aihuishou.com/image/9173933517940939643.png"
+    },
+    {
+      "id": 220718,
+      "name": "Balenciaga Classic City 其他款式",
+      "title": "Balenciaga Classic City 其他款式",
+      "subTitle": "",
+      "imageUrl": "https://sr.aihuishou.com/image/817696803086776945.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "",
+      "seriesCode": "230720185003322",
+      "seriesName": "Classic City",
+      "seriesImage": "https://sr.aihuishou.com/image/9173933517940939643.png"
+    }
+  ],
+  "brands": [],
+  "raw": [
+    [
+      {
+        "name": "luxuryquickenquiry",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "sousuoyepinlei",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "xiaoxitongzhi",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "open_member",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "aflpayment_recycle",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "yanxuanershoupubuliu",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "accurate_valuation_entrance",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "environmental_recycletxt",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "recommend_property",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "shouyedabaoshou",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "luxuryquickenquiry_modes",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "search_result",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "official_inquiry_subjective",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "huangjinbaojiaye",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "wechat_advertisement",
+        "group": 2,
+        "customGroupName": null
+      },
+      {
+        "name": "official_qualityenquiry",
+        "group": 1,
+        "customGroupName": "c2"
+      }
+    ],
+    {
+      "priceDescription": {
+        "firstContent": "该估价是基于您所提供的物品信息预估的回收价格。爱回收将在收到您的物品并进行专业质检后，提供实际的回收报价。",
+        "secondContent": "*如质检结果与您提供的信息有差异，实际回收报价可能产生变化。"
+      },
+      "aiMappingConfig": {
+        "aiMappingEnable": true,
+        "aiMappingResultConsultantLink": {
+          "h5LinkUrl": "https://page.aihuishou.com/amr/?activityId=7H0HR6SD&agent=ahs_m",
+          "wechatOriginId": "gh_7ee6b4cdb5ff",
+          "wechatAppId": "wx7e490492b4c23e98",
+          "wechatLinkUrl": "/pages-activity/avatar/index?activityId=7H0HR6SD",
+          "appLinkUrl": null,
+          "ttAppId": null,
+          "ttLinkUrl": null,
+          "alipayAppId": null,
+          "alipayLinkUrl": null
+        },
+        "shootInstructionLink": {
+          "h5LinkUrl": "https://page.aihuishou.com/amr/?activityId=NUHVVK59&agent=ahs_m",
+          "wechatOriginId": "gh_7ee6b4cdb5ff",
+          "wechatAppId": "wx7e490492b4c23e98",
+          "wechatLinkUrl": "/pages-activity/avatar/index?activityId=NUHVVK59",
+          "appLinkUrl": null,
+          "ttAppId": null,
+          "ttLinkUrl": null,
+          "alipayAppId": null,
+          "alipayLinkUrl": null
+        },
+        "shootInstructionImageUrl": "https://sr.aihuishou.com/c2b/dubai/luxury/ai-mapping/20250518/bag-instruction.png",
+        "frameImageUrl": "https://sr.aihuishou.com/c2b/dubai/luxury/ai-mapping/20250518/jewelry-frame.png"
+      }
+    },
+    {
+      "consultantLink": {
+        "h5LinkUrl": "https://page.aihuishou.com/amr/?activityId=FIZN0JPL&agent=ahs_m",
+        "wechatOriginId": "gh_7ee6b4cdb5ff",
+        "wechatAppId": "wx7e490492b4c23e98",
+        "wechatLinkUrl": "/pages-activity/avatar/index?activityId=FIZN0JPL",
+        "appLinkUrl": null,
+        "ttAppId": null,
+        "ttLinkUrl": null,
+        "alipayAppId": null,
+        "alipayLinkUrl": null
+      }
+    },
+    {
+      "photographInquiry": true,
+      "defaultProductId": 67953,
+      "quickInquiry": true,
+      "showPhotographEnter": false
+    },
+    [
+      {
+        "name": "大小",
+        "id": 317,
+        "order": 1,
+        "ppvList": [
+          {
+            "name": "迷你",
+            "id": 1454,
+            "order": 1002
+          },
+          {
+            "name": "小号",
+            "id": 1455,
+            "order": 1004
+          },
+          {
+            "name": "常规",
+            "id": 1451,
+            "order": 1005
+          }
+        ]
+      },
+      {
+        "name": "肩带样式",
+        "id": 319,
+        "order": 3,
+        "ppvList": [
+          {
+            "name": "可调节,可拆卸",
+            "id": 1691,
+            "order": 10
+          },
+          {
+            "name": "不可调节,可拆卸",
+            "id": 2060,
+            "order": 16
+          }
+        ]
+      },
+      {
+        "name": "元素",
+        "id": 321,
+        "order": 5,
+        "ppvList": [
+          {
+            "name": "纯色",
+            "id": 1654,
+            "order": 9
+          },
+          {
+            "name": "光面",
+            "id": 2086,
+            "order": 36
+          },
+          {
+            "name": "粒面",
+            "id": 2088,
+            "order": 39
+          }
+        ]
+      },
+      {
+        "name": "材质",
+        "id": 322,
+        "order": 6,
+        "ppvList": [
+          {
+            "name": "牛皮",
+            "id": 1302,
+            "order": 3
+          },
+          {
+            "name": "羊皮",
+            "id": 1305,
+            "order": 6
+          }
+        ]
+      },
+      {
+        "name": "内部结构",
+        "id": 323,
+        "order": 7,
+        "ppvList": [
+          {
+            "name": "拉链暗袋",
+            "id": 1513,
+            "order": 4
+          },
+          {
+            "name": "证件袋",
+            "id": 1515,
+            "order": 6
+          }
+        ]
+      },
+      {
+        "name": "闭合方式",
+        "id": 324,
+        "order": 8,
+        "ppvList": [
+          {
+            "name": "拉链",
+            "id": 1227,
+            "order": 1
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 199683,
+        "productName": "黑色 羊皮 机车包 25 300295-D94JN-1000",
+        "title": "黑色 羊皮 机车包 25 300295-D94JN-1000",
+        "subTitle": "光面|羊皮",
+        "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/4628732679429972796.png",
+        "ppvList": [
+          "光面",
+          "羊皮"
+        ],
+        "serials": {
+          "code": "230720185003322",
+          "name": "Classic City",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/9173933517940939643.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 199681,
+        "productName": "黑色 羊皮 机车包 29 433353-D94JN-1000",
+        "title": "黑色 羊皮 机车包 29 433353-D94JN-1000",
+        "subTitle": "光面|羊皮",
+        "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/1474991360330511529.png",
+        "ppvList": [
+          "光面",
+          "羊皮"
+        ],
+        "serials": {
+          "code": "230720185003322",
+          "name": "Classic City",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/9173933517940939643.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 199680,
+        "productName": "灰色 羊皮 机车包 30 432831-AQ41G-1360",
+        "title": "灰色 羊皮 机车包 30 432831-AQ41G-1360",
+        "subTitle": "纯色|羊皮",
+        "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/3383953590894980152.png",
+        "ppvList": [
+          "纯色",
+          "羊皮"
+        ],
+        "serials": {
+          "code": "230720185003322",
+          "name": "Classic City",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/9173933517940939643.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 199679,
+        "productName": "黑色 羊皮 机车包 30 431621-D94JG-1000",
+        "title": "黑色 羊皮 机车包 30 431621-D94JG-1000",
+        "subTitle": "光面|羊皮",
+        "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/2686613278643773590.png",
+        "ppvList": [
+          "光面",
+          "羊皮"
+        ],
+        "serials": {
+          "code": "230720185003322",
+          "name": "Classic City",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/9173933517940939643.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 199682,
+        "productName": "粉色 羊皮 机车包 20.5 505982-AQ41N-5901",
+        "title": "粉色 羊皮 机车包 20.5 505982-AQ41N-5901",
+        "subTitle": "粒面|羊皮",
+        "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/4909603621517978900.png",
+        "ppvList": [
+          "粒面",
+          "羊皮"
+        ],
+        "serials": {
+          "code": "230720185003322",
+          "name": "Classic City",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/9173933517940939643.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 199685,
+        "productName": "军绿色 羊皮 机车包 22 8230582ABV83258",
+        "title": "军绿色 羊皮 机车包 22 8230582ABV83258",
+        "subTitle": "光面|羊皮",
+        "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/308919204918299976.png",
+        "ppvList": [
+          "光面",
+          "羊皮"
+        ],
+        "serials": {
+          "code": "230720185003322",
+          "name": "Classic City",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/9173933517940939643.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 199684,
+        "productName": "森林绿 牛皮 机车包 22 638524-15Y47-3011",
+        "title": "森林绿 牛皮 机车包 22 638524-15Y47-3011",
+        "subTitle": "粒面|牛皮",
+        "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/5961977537044844670.png",
+        "ppvList": [
+          "粒面",
+          "牛皮"
+        ],
+        "serials": {
+          "code": "230720185003322",
+          "name": "Classic City",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/9173933517940939643.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 220718,
+        "productName": "Balenciaga Classic City 其他款式",
+        "title": "Balenciaga Classic City 其他款式",
+        "subTitle": "",
+        "imageUrl": "https://sr.aihuishou.com/image/817696803086776945.png",
+        "ppvList": [],
+        "serials": {
+          "code": "230720185003322",
+          "name": "Classic City",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/9173933517940939643.png"
+        },
+        "extensionCategory": null
+      }
+    ]
+  ]
+}

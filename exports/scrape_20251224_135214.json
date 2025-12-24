@@ -1,0 +1,376 @@
+{
+  "products": [
+    {
+      "id": 213260,
+      "name": "白色拼云雾色 牛皮 手提包 25 651577VMAUH9018",
+      "title": "白色拼云雾色 牛皮 手提包 25 651577VMAUH9018",
+      "subTitle": "镂空|牛皮",
+      "imageUrl": "https://sr.aihuishou.com/image/4214298552032633396.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "镂空, 牛皮",
+      "seriesCode": "231120121448418",
+      "seriesName": "The Shell",
+      "seriesImage": "https://sr.aihuishou.com/image/8277453088040273722.png"
+    },
+    {
+      "id": 213323,
+      "name": "薰衣草紫色 牛皮 手提包 7 651819VMAUH5130",
+      "title": "薰衣草紫色 牛皮 手提包 7 651819VMAUH5130",
+      "subTitle": "镂空|牛皮",
+      "imageUrl": "https://sr.aihuishou.com/image/6024900983990891638.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "镂空, 牛皮",
+      "seriesCode": "231120121448418",
+      "seriesName": "The Shell",
+      "seriesImage": "https://sr.aihuishou.com/image/8277453088040273722.png"
+    },
+    {
+      "id": 214461,
+      "name": "奶油黄色 牛皮 手提包 22 651819-VMAUH-7136",
+      "title": "奶油黄色 牛皮 手提包 22 651819-VMAUH-7136",
+      "subTitle": "纯色|牛皮",
+      "imageUrl": "https://sr.aihuishou.com/image/5146957594466358756.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "纯色, 牛皮",
+      "seriesCode": "231120121448418",
+      "seriesName": "The Shell",
+      "seriesImage": "https://sr.aihuishou.com/image/8277453088040273722.png"
+    },
+    {
+      "id": 214462,
+      "name": "辣椒红色 牛皮 手提包 20 651819-VMAUH-8903",
+      "title": "辣椒红色 牛皮 手提包 20 651819-VMAUH-8903",
+      "subTitle": "纯色|牛皮",
+      "imageUrl": "https://sr.aihuishou.com/image/8933543035184766140.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "纯色, 牛皮",
+      "seriesCode": "231120121448418",
+      "seriesName": "The Shell",
+      "seriesImage": "https://sr.aihuishou.com/image/8277453088040273722.png"
+    },
+    {
+      "id": 222824,
+      "name": "Bottega Veneta The Shell 其他款式",
+      "title": "Bottega Veneta The Shell 其他款式",
+      "subTitle": "",
+      "imageUrl": "https://sr.aihuishou.com/image/466323894217440580.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "",
+      "seriesCode": "231120121448418",
+      "seriesName": "The Shell",
+      "seriesImage": "https://sr.aihuishou.com/image/8277453088040273722.png"
+    }
+  ],
+  "brands": [],
+  "raw": [
+    [
+      {
+        "name": "luxuryquickenquiry",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "sousuoyepinlei",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "xiaoxitongzhi",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "open_member",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "aflpayment_recycle",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "yanxuanershoupubuliu",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "accurate_valuation_entrance",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "environmental_recycletxt",
+        "group": 3,
+        "customGroupName": null
+      },
+      {
+        "name": "recommend_property",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "shouyedabaoshou",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "luxuryquickenquiry_modes",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "search_result",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "official_inquiry_subjective",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "huangjinbaojiaye",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "wechat_advertisement",
+        "group": 2,
+        "customGroupName": null
+      },
+      {
+        "name": "official_qualityenquiry",
+        "group": 1,
+        "customGroupName": "c2"
+      }
+    ],
+    {
+      "priceDescription": {
+        "firstContent": "该估价是基于您所提供的物品信息预估的回收价格。爱回收将在收到您的物品并进行专业质检后，提供实际的回收报价。",
+        "secondContent": "*如质检结果与您提供的信息有差异，实际回收报价可能产生变化。"
+      },
+      "aiMappingConfig": {
+        "aiMappingEnable": true,
+        "aiMappingResultConsultantLink": {
+          "h5LinkUrl": "https://page.aihuishou.com/amr/?activityId=7H0HR6SD&agent=ahs_m",
+          "wechatOriginId": "gh_7ee6b4cdb5ff",
+          "wechatAppId": "wx7e490492b4c23e98",
+          "wechatLinkUrl": "/pages-activity/avatar/index?activityId=7H0HR6SD",
+          "appLinkUrl": null,
+          "ttAppId": null,
+          "ttLinkUrl": null,
+          "alipayAppId": null,
+          "alipayLinkUrl": null
+        },
+        "shootInstructionLink": {
+          "h5LinkUrl": "https://page.aihuishou.com/amr/?activityId=NUHVVK59&agent=ahs_m",
+          "wechatOriginId": "gh_7ee6b4cdb5ff",
+          "wechatAppId": "wx7e490492b4c23e98",
+          "wechatLinkUrl": "/pages-activity/avatar/index?activityId=NUHVVK59",
+          "appLinkUrl": null,
+          "ttAppId": null,
+          "ttLinkUrl": null,
+          "alipayAppId": null,
+          "alipayLinkUrl": null
+        },
+        "shootInstructionImageUrl": "https://sr.aihuishou.com/c2b/dubai/luxury/ai-mapping/20250518/bag-instruction.png",
+        "frameImageUrl": "https://sr.aihuishou.com/c2b/dubai/luxury/ai-mapping/20250518/jewelry-frame.png"
+      }
+    },
+    {
+      "photographInquiry": true,
+      "defaultProductId": 67942,
+      "quickInquiry": true,
+      "showPhotographEnter": false
+    },
+    [
+      {
+        "name": "大小",
+        "id": 317,
+        "order": 1,
+        "ppvList": [
+          {
+            "name": "常规",
+            "id": 1451,
+            "order": 1005
+          }
+        ]
+      },
+      {
+        "name": "元素",
+        "id": 321,
+        "order": 5,
+        "ppvList": [
+          {
+            "name": "纯色",
+            "id": 1654,
+            "order": 9
+          },
+          {
+            "name": "镂空",
+            "id": 1665,
+            "order": 20
+          }
+        ]
+      },
+      {
+        "name": "材质",
+        "id": 322,
+        "order": 6,
+        "ppvList": [
+          {
+            "name": "牛皮",
+            "id": 1302,
+            "order": 3
+          }
+        ]
+      },
+      {
+        "name": "内部结构",
+        "id": 323,
+        "order": 7,
+        "ppvList": [
+          {
+            "name": "拉链暗袋",
+            "id": 1513,
+            "order": 4
+          }
+        ]
+      },
+      {
+        "name": "闭合方式",
+        "id": 324,
+        "order": 8,
+        "ppvList": [
+          {
+            "name": "拉链",
+            "id": 1227,
+            "order": 1
+          },
+          {
+            "name": "抽带",
+            "id": 1295,
+            "order": 5
+          }
+        ]
+      },
+      {
+        "name": "有无夹层(内部暗袋)",
+        "id": 325,
+        "order": 9,
+        "ppvList": [
+          {
+            "name": "有夹层",
+            "id": 2195,
+            "order": 3
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 213260,
+        "productName": "白色拼云雾色 牛皮 手提包 25 651577VMAUH9018",
+        "title": "白色拼云雾色 牛皮 手提包 25 651577VMAUH9018",
+        "subTitle": "镂空|牛皮",
+        "imageUrl": "https://sr.aihuishou.com/image/4214298552032633396.png",
+        "ppvList": [
+          "镂空",
+          "牛皮"
+        ],
+        "serials": {
+          "code": "231120121448418",
+          "name": "The Shell",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/8277453088040273722.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 213323,
+        "productName": "薰衣草紫色 牛皮 手提包 7 651819VMAUH5130",
+        "title": "薰衣草紫色 牛皮 手提包 7 651819VMAUH5130",
+        "subTitle": "镂空|牛皮",
+        "imageUrl": "https://sr.aihuishou.com/image/6024900983990891638.png",
+        "ppvList": [
+          "镂空",
+          "牛皮"
+        ],
+        "serials": {
+          "code": "231120121448418",
+          "name": "The Shell",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/8277453088040273722.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 214461,
+        "productName": "奶油黄色 牛皮 手提包 22 651819-VMAUH-7136",
+        "title": "奶油黄色 牛皮 手提包 22 651819-VMAUH-7136",
+        "subTitle": "纯色|牛皮",
+        "imageUrl": "https://sr.aihuishou.com/image/5146957594466358756.png",
+        "ppvList": [
+          "纯色",
+          "牛皮"
+        ],
+        "serials": {
+          "code": "231120121448418",
+          "name": "The Shell",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/8277453088040273722.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 214462,
+        "productName": "辣椒红色 牛皮 手提包 20 651819-VMAUH-8903",
+        "title": "辣椒红色 牛皮 手提包 20 651819-VMAUH-8903",
+        "subTitle": "纯色|牛皮",
+        "imageUrl": "https://sr.aihuishou.com/image/8933543035184766140.png",
+        "ppvList": [
+          "纯色",
+          "牛皮"
+        ],
+        "serials": {
+          "code": "231120121448418",
+          "name": "The Shell",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/8277453088040273722.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 222824,
+        "productName": "Bottega Veneta The Shell 其他款式",
+        "title": "Bottega Veneta The Shell 其他款式",
+        "subTitle": "",
+        "imageUrl": "https://sr.aihuishou.com/image/466323894217440580.png",
+        "ppvList": [],
+        "serials": {
+          "code": "231120121448418",
+          "name": "The Shell",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/8277453088040273722.png"
+        },
+        "extensionCategory": null
+      }
+    ]
+  ]
+}

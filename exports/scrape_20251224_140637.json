@@ -1,0 +1,523 @@
+{
+  "products": [
+    {
+      "id": 199691,
+      "name": "黑色 牛皮 单肩包 32 716393210IT1000",
+      "title": "黑色 牛皮 单肩包 32 716393210IT1000",
+      "subTitle": "链条|牛皮",
+      "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/6333895334375551091.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "链条, 牛皮",
+      "seriesCode": "231225094054599",
+      "seriesName": "Crush",
+      "seriesImage": "https://sr.aihuishou.com/image/8278475794833442022.png"
+    },
+    {
+      "id": 199689,
+      "name": "黑色 牛皮 单肩包 24.9 716351210IY1000",
+      "title": "黑色 牛皮 单肩包 24.9 716351210IY1000",
+      "subTitle": "链条|牛皮",
+      "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/4791552624905063196.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "链条, 牛皮",
+      "seriesCode": "231225094054599",
+      "seriesName": "Crush",
+      "seriesImage": "https://sr.aihuishou.com/image/8278475794833442022.png"
+    },
+    {
+      "id": 199690,
+      "name": "黑色 牛皮 单肩包 31 716393210IY1000",
+      "title": "黑色 牛皮 单肩包 31 716393210IY1000",
+      "subTitle": "链条|牛皮",
+      "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/1081360862860661941.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "链条, 牛皮",
+      "seriesCode": "231225094054599",
+      "seriesName": "Crush",
+      "seriesImage": "https://sr.aihuishou.com/image/8278475794833442022.png"
+    },
+    {
+      "id": 199693,
+      "name": "黑色 牛皮 单肩包 31 716393210J11000",
+      "title": "黑色 牛皮 单肩包 31 716393210J11000",
+      "subTitle": "斜纹|牛皮",
+      "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/6479271296848840839.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "斜纹, 牛皮",
+      "seriesCode": "231225094054599",
+      "seriesName": "Crush",
+      "seriesImage": "https://sr.aihuishou.com/image/8278475794833442022.png"
+    },
+    {
+      "id": 199687,
+      "name": "黑色 牛皮 单肩包 24.9 716351210J11000",
+      "title": "黑色 牛皮 单肩包 24.9 716351210J11000",
+      "subTitle": "链条|牛皮",
+      "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/1886671869813425989.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "链条, 牛皮",
+      "seriesCode": "231225094054599",
+      "seriesName": "Crush",
+      "seriesImage": "https://sr.aihuishou.com/image/8278475794833442022.png"
+    },
+    {
+      "id": 199688,
+      "name": "米色 牛皮 斜挎包 31 7654662AAR29224",
+      "title": "米色 牛皮 斜挎包 31 7654662AAR29224",
+      "subTitle": "粒面|牛皮",
+      "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/4584571900552335320.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "粒面, 牛皮",
+      "seriesCode": "231225094054599",
+      "seriesName": "Crush",
+      "seriesImage": "https://sr.aihuishou.com/image/8278475794833442022.png"
+    },
+    {
+      "id": 199692,
+      "name": "黑色 牛皮 单肩包 24 806479210J11000",
+      "title": "黑色 牛皮 单肩包 24 806479210J11000",
+      "subTitle": "斜纹|牛皮",
+      "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/1885461496216501902.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "斜纹, 牛皮",
+      "seriesCode": "231225094054599",
+      "seriesName": "Crush",
+      "seriesImage": "https://sr.aihuishou.com/image/8278475794833442022.png"
+    },
+    {
+      "id": 220720,
+      "name": "Balenciaga Crush 其他款式",
+      "title": "Balenciaga Crush 其他款式",
+      "subTitle": "",
+      "imageUrl": "https://sr.aihuishou.com/image/5571937125437376899.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "",
+      "seriesCode": "231225094054599",
+      "seriesName": "Crush",
+      "seriesImage": "https://sr.aihuishou.com/image/8278475794833442022.png"
+    }
+  ],
+  "brands": [],
+  "raw": [
+    [
+      {
+        "name": "luxuryquickenquiry",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "sousuoyepinlei",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "xiaoxitongzhi",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "open_member",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "aflpayment_recycle",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "yanxuanershoupubuliu",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "accurate_valuation_entrance",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "environmental_recycletxt",
+        "group": 2,
+        "customGroupName": null
+      },
+      {
+        "name": "recommend_property",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "shouyedabaoshou",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "luxuryquickenquiry_modes",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "search_result",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "official_inquiry_subjective",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "huangjinbaojiaye",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "wechat_advertisement",
+        "group": 2,
+        "customGroupName": null
+      },
+      {
+        "name": "official_qualityenquiry",
+        "group": 1,
+        "customGroupName": "c2"
+      }
+    ],
+    {
+      "priceDescription": {
+        "firstContent": "该估价是基于您所提供的物品信息预估的回收价格。爱回收将在收到您的物品并进行专业质检后，提供实际的回收报价。",
+        "secondContent": "*如质检结果与您提供的信息有差异，实际回收报价可能产生变化。"
+      },
+      "aiMappingConfig": {
+        "aiMappingEnable": true,
+        "aiMappingResultConsultantLink": {
+          "h5LinkUrl": "https://page.aihuishou.com/amr/?activityId=7H0HR6SD&agent=ahs_m",
+          "wechatOriginId": "gh_7ee6b4cdb5ff",
+          "wechatAppId": "wx7e490492b4c23e98",
+          "wechatLinkUrl": "/pages-activity/avatar/index?activityId=7H0HR6SD",
+          "appLinkUrl": null,
+          "ttAppId": null,
+          "ttLinkUrl": null,
+          "alipayAppId": null,
+          "alipayLinkUrl": null
+        },
+        "shootInstructionLink": {
+          "h5LinkUrl": "https://page.aihuishou.com/amr/?activityId=NUHVVK59&agent=ahs_m",
+          "wechatOriginId": "gh_7ee6b4cdb5ff",
+          "wechatAppId": "wx7e490492b4c23e98",
+          "wechatLinkUrl": "/pages-activity/avatar/index?activityId=NUHVVK59",
+          "appLinkUrl": null,
+          "ttAppId": null,
+          "ttLinkUrl": null,
+          "alipayAppId": null,
+          "alipayLinkUrl": null
+        },
+        "shootInstructionImageUrl": "https://sr.aihuishou.com/c2b/dubai/luxury/ai-mapping/20250518/bag-instruction.png",
+        "frameImageUrl": "https://sr.aihuishou.com/c2b/dubai/luxury/ai-mapping/20250518/jewelry-frame.png"
+      }
+    },
+    {
+      "consultantLink": {
+        "h5LinkUrl": "https://page.aihuishou.com/amr/?activityId=FIZN0JPL&agent=ahs_m",
+        "wechatOriginId": "gh_7ee6b4cdb5ff",
+        "wechatAppId": "wx7e490492b4c23e98",
+        "wechatLinkUrl": "/pages-activity/avatar/index?activityId=FIZN0JPL",
+        "appLinkUrl": null,
+        "ttAppId": null,
+        "ttLinkUrl": null,
+        "alipayAppId": null,
+        "alipayLinkUrl": null
+      }
+    },
+    {
+      "photographInquiry": true,
+      "defaultProductId": 67953,
+      "quickInquiry": true,
+      "showPhotographEnter": false
+    },
+    [
+      {
+        "name": "大小",
+        "id": 317,
+        "order": 1,
+        "ppvList": [
+          {
+            "name": "小号",
+            "id": 1455,
+            "order": 1004
+          },
+          {
+            "name": "常规",
+            "id": 1451,
+            "order": 1005
+          },
+          {
+            "name": "中号",
+            "id": 1456,
+            "order": 1006
+          }
+        ]
+      },
+      {
+        "name": "肩带样式",
+        "id": 319,
+        "order": 3,
+        "ppvList": [
+          {
+            "name": "不可调节,不可拆卸",
+            "id": 1457,
+            "order": 3
+          },
+          {
+            "name": "可调节,不可拆卸",
+            "id": 1460,
+            "order": 8
+          }
+        ]
+      },
+      {
+        "name": "元素",
+        "id": 321,
+        "order": 5,
+        "ppvList": [
+          {
+            "name": "链条",
+            "id": 1663,
+            "order": 18
+          },
+          {
+            "name": "粒面",
+            "id": 2088,
+            "order": 39
+          },
+          {
+            "name": "斜纹",
+            "id": 2092,
+            "order": 45
+          }
+        ]
+      },
+      {
+        "name": "材质",
+        "id": 322,
+        "order": 6,
+        "ppvList": [
+          {
+            "name": "牛皮",
+            "id": 1302,
+            "order": 3
+          }
+        ]
+      },
+      {
+        "name": "内部结构",
+        "id": 323,
+        "order": 7,
+        "ppvList": [
+          {
+            "name": "拉链暗袋",
+            "id": 1513,
+            "order": 4
+          },
+          {
+            "name": "内置插袋",
+            "id": 1514,
+            "order": 5
+          },
+          {
+            "name": "夹层拉链袋",
+            "id": 1624,
+            "order": 14
+          }
+        ]
+      },
+      {
+        "name": "闭合方式",
+        "id": 324,
+        "order": 8,
+        "ppvList": [
+          {
+            "name": "拉链",
+            "id": 1227,
+            "order": 1
+          },
+          {
+            "name": "磁扣",
+            "id": 1297,
+            "order": 7
+          },
+          {
+            "name": "翻盖",
+            "id": 1298,
+            "order": 8
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 199691,
+        "productName": "黑色 牛皮 单肩包 32 716393210IT1000",
+        "title": "黑色 牛皮 单肩包 32 716393210IT1000",
+        "subTitle": "链条|牛皮",
+        "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/6333895334375551091.png",
+        "ppvList": [
+          "链条",
+          "牛皮"
+        ],
+        "serials": {
+          "code": "231225094054599",
+          "name": "Crush",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/8278475794833442022.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 199689,
+        "productName": "黑色 牛皮 单肩包 24.9 716351210IY1000",
+        "title": "黑色 牛皮 单肩包 24.9 716351210IY1000",
+        "subTitle": "链条|牛皮",
+        "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/4791552624905063196.png",
+        "ppvList": [
+          "链条",
+          "牛皮"
+        ],
+        "serials": {
+          "code": "231225094054599",
+          "name": "Crush",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/8278475794833442022.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 199690,
+        "productName": "黑色 牛皮 单肩包 31 716393210IY1000",
+        "title": "黑色 牛皮 单肩包 31 716393210IY1000",
+        "subTitle": "链条|牛皮",
+        "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/1081360862860661941.png",
+        "ppvList": [
+          "链条",
+          "牛皮"
+        ],
+        "serials": {
+          "code": "231225094054599",
+          "name": "Crush",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/8278475794833442022.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 199693,
+        "productName": "黑色 牛皮 单肩包 31 716393210J11000",
+        "title": "黑色 牛皮 单肩包 31 716393210J11000",
+        "subTitle": "斜纹|牛皮",
+        "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/6479271296848840839.png",
+        "ppvList": [
+          "斜纹",
+          "牛皮"
+        ],
+        "serials": {
+          "code": "231225094054599",
+          "name": "Crush",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/8278475794833442022.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 199687,
+        "productName": "黑色 牛皮 单肩包 24.9 716351210J11000",
+        "title": "黑色 牛皮 单肩包 24.9 716351210J11000",
+        "subTitle": "链条|牛皮",
+        "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/1886671869813425989.png",
+        "ppvList": [
+          "链条",
+          "牛皮"
+        ],
+        "serials": {
+          "code": "231225094054599",
+          "name": "Crush",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/8278475794833442022.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 199688,
+        "productName": "米色 牛皮 斜挎包 31 7654662AAR29224",
+        "title": "米色 牛皮 斜挎包 31 7654662AAR29224",
+        "subTitle": "粒面|牛皮",
+        "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/4584571900552335320.png",
+        "ppvList": [
+          "粒面",
+          "牛皮"
+        ],
+        "serials": {
+          "code": "231225094054599",
+          "name": "Crush",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/8278475794833442022.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 199692,
+        "productName": "黑色 牛皮 单肩包 24 806479210J11000",
+        "title": "黑色 牛皮 单肩包 24 806479210J11000",
+        "subTitle": "斜纹|牛皮",
+        "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/image/1885461496216501902.png",
+        "ppvList": [
+          "斜纹",
+          "牛皮"
+        ],
+        "serials": {
+          "code": "231225094054599",
+          "name": "Crush",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/8278475794833442022.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 220720,
+        "productName": "Balenciaga Crush 其他款式",
+        "title": "Balenciaga Crush 其他款式",
+        "subTitle": "",
+        "imageUrl": "https://sr.aihuishou.com/image/5571937125437376899.png",
+        "ppvList": [],
+        "serials": {
+          "code": "231225094054599",
+          "name": "Crush",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/8278475794833442022.png"
+        },
+        "extensionCategory": null
+      }
+    ]
+  ]
+}

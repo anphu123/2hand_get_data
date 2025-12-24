@@ -1,0 +1,267 @@
+{
+  "products": [
+    {
+      "id": 213242,
+      "name": "白色 牛皮 手提包 21 652001-VCP40-9143",
+      "title": "白色 牛皮 手提包 21 652001-VCP40-9143",
+      "subTitle": "牛皮",
+      "imageUrl": "https://sr.aihuishou.com/image/2063118991660221272.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "牛皮",
+      "seriesCode": "231120121438491",
+      "seriesName": "The Twist",
+      "seriesImage": "https://sr.aihuishou.com/image/9087852751524347740.png"
+    },
+    {
+      "id": 213258,
+      "name": "紫色 羊皮 手提包 21 652001-VCPP0-5010",
+      "title": "紫色 羊皮 手提包 21 652001-VCPP0-5010",
+      "subTitle": "羊皮",
+      "imageUrl": "https://sr.aihuishou.com/image/7890944523004926680.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "羊皮",
+      "seriesCode": "231120121438491",
+      "seriesName": "The Twist",
+      "seriesImage": "https://sr.aihuishou.com/image/9087852751524347740.png"
+    },
+    {
+      "id": 222823,
+      "name": "Bottega Veneta The Twist 其他款式",
+      "title": "Bottega Veneta The Twist 其他款式",
+      "subTitle": "",
+      "imageUrl": "https://sr.aihuishou.com/image/2422266559128613903.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "",
+      "seriesCode": "231120121438491",
+      "seriesName": "The Twist",
+      "seriesImage": "https://sr.aihuishou.com/image/9087852751524347740.png"
+    }
+  ],
+  "brands": [],
+  "raw": [
+    [
+      {
+        "name": "luxuryquickenquiry",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "sousuoyepinlei",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "xiaoxitongzhi",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "open_member",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "aflpayment_recycle",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "yanxuanershoupubuliu",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "accurate_valuation_entrance",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "environmental_recycletxt",
+        "group": 2,
+        "customGroupName": null
+      },
+      {
+        "name": "recommend_property",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "shouyedabaoshou",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "luxuryquickenquiry_modes",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "search_result",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "official_inquiry_subjective",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "huangjinbaojiaye",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "wechat_advertisement",
+        "group": 2,
+        "customGroupName": null
+      },
+      {
+        "name": "official_qualityenquiry",
+        "group": 1,
+        "customGroupName": "c2"
+      }
+    ],
+    {
+      "priceDescription": {
+        "firstContent": "该估价是基于您所提供的物品信息预估的回收价格。爱回收将在收到您的物品并进行专业质检后，提供实际的回收报价。",
+        "secondContent": "*如质检结果与您提供的信息有差异，实际回收报价可能产生变化。"
+      },
+      "aiMappingConfig": {
+        "aiMappingEnable": true,
+        "aiMappingResultConsultantLink": {
+          "h5LinkUrl": "https://page.aihuishou.com/amr/?activityId=7H0HR6SD&agent=ahs_m",
+          "wechatOriginId": "gh_7ee6b4cdb5ff",
+          "wechatAppId": "wx7e490492b4c23e98",
+          "wechatLinkUrl": "/pages-activity/avatar/index?activityId=7H0HR6SD",
+          "appLinkUrl": null,
+          "ttAppId": null,
+          "ttLinkUrl": null,
+          "alipayAppId": null,
+          "alipayLinkUrl": null
+        },
+        "shootInstructionLink": {
+          "h5LinkUrl": "https://page.aihuishou.com/amr/?activityId=NUHVVK59&agent=ahs_m",
+          "wechatOriginId": "gh_7ee6b4cdb5ff",
+          "wechatAppId": "wx7e490492b4c23e98",
+          "wechatLinkUrl": "/pages-activity/avatar/index?activityId=NUHVVK59",
+          "appLinkUrl": null,
+          "ttAppId": null,
+          "ttLinkUrl": null,
+          "alipayAppId": null,
+          "alipayLinkUrl": null
+        },
+        "shootInstructionImageUrl": "https://sr.aihuishou.com/c2b/dubai/luxury/ai-mapping/20250518/bag-instruction.png",
+        "frameImageUrl": "https://sr.aihuishou.com/c2b/dubai/luxury/ai-mapping/20250518/jewelry-frame.png"
+      }
+    },
+    {
+      "photographInquiry": true,
+      "defaultProductId": 67942,
+      "quickInquiry": true,
+      "showPhotographEnter": false
+    },
+    [
+      {
+        "name": "大小",
+        "id": 317,
+        "order": 1,
+        "ppvList": [
+          {
+            "name": "迷你",
+            "id": 1454,
+            "order": 1002
+          }
+        ]
+      },
+      {
+        "name": "材质",
+        "id": 322,
+        "order": 6,
+        "ppvList": [
+          {
+            "name": "牛皮",
+            "id": 1302,
+            "order": 3
+          },
+          {
+            "name": "羊皮",
+            "id": 1305,
+            "order": 6
+          }
+        ]
+      },
+      {
+        "name": "闭合方式",
+        "id": 324,
+        "order": 8,
+        "ppvList": [
+          {
+            "name": "拉链",
+            "id": 1227,
+            "order": 1
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 213242,
+        "productName": "白色 牛皮 手提包 21 652001-VCP40-9143",
+        "title": "白色 牛皮 手提包 21 652001-VCP40-9143",
+        "subTitle": "牛皮",
+        "imageUrl": "https://sr.aihuishou.com/image/2063118991660221272.png",
+        "ppvList": [
+          "牛皮"
+        ],
+        "serials": {
+          "code": "231120121438491",
+          "name": "The Twist",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/9087852751524347740.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 213258,
+        "productName": "紫色 羊皮 手提包 21 652001-VCPP0-5010",
+        "title": "紫色 羊皮 手提包 21 652001-VCPP0-5010",
+        "subTitle": "羊皮",
+        "imageUrl": "https://sr.aihuishou.com/image/7890944523004926680.png",
+        "ppvList": [
+          "羊皮"
+        ],
+        "serials": {
+          "code": "231120121438491",
+          "name": "The Twist",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/9087852751524347740.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 222823,
+        "productName": "Bottega Veneta The Twist 其他款式",
+        "title": "Bottega Veneta The Twist 其他款式",
+        "subTitle": "",
+        "imageUrl": "https://sr.aihuishou.com/image/2422266559128613903.png",
+        "ppvList": [],
+        "serials": {
+          "code": "231120121438491",
+          "name": "The Twist",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/9087852751524347740.png"
+        },
+        "extensionCategory": null
+      }
+    ]
+  ]
+}

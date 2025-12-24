@@ -1,0 +1,316 @@
+{
+  "products": [
+    {
+      "id": 213212,
+      "name": "黄色 牛皮 手拿包 22 658476VCP403458",
+      "title": "黄色 牛皮 手拿包 22 658476VCP403458",
+      "subTitle": "牛皮",
+      "imageUrl": "https://sr.aihuishou.com/image/2773527380859577187.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "牛皮",
+      "seriesCode": "231120121442536",
+      "seriesName": "The Triangle",
+      "seriesImage": "https://sr.aihuishou.com/image/334634115559337787.png"
+    },
+    {
+      "id": 213259,
+      "name": "杏仁色 皮革 手提包 31 652446VCP402700",
+      "title": "杏仁色 皮革 手提包 31 652446VCP402700",
+      "subTitle": "皮革",
+      "imageUrl": "https://sr.aihuishou.com/image/5133634869378720792.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "皮革",
+      "seriesCode": "231120121442536",
+      "seriesName": "The Triangle",
+      "seriesImage": "https://sr.aihuishou.com/image/334634115559337787.png"
+    },
+    {
+      "id": 214465,
+      "name": "蜜桃粉 牛皮 手提包 24 658476-VCP40-7806",
+      "title": "蜜桃粉 牛皮 手提包 24 658476-VCP40-7806",
+      "subTitle": "牛皮",
+      "imageUrl": "https://sr.aihuishou.com/image/1885370540466101389.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "牛皮",
+      "seriesCode": "231120121442536",
+      "seriesName": "The Triangle",
+      "seriesImage": "https://sr.aihuishou.com/image/334634115559337787.png"
+    },
+    {
+      "id": 222821,
+      "name": "Bottega Veneta The Triangle 其他款式",
+      "title": "Bottega Veneta The Triangle 其他款式",
+      "subTitle": "",
+      "imageUrl": "https://sr.aihuishou.com/image/6143488853885904619.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "",
+      "seriesCode": "231120121442536",
+      "seriesName": "The Triangle",
+      "seriesImage": "https://sr.aihuishou.com/image/334634115559337787.png"
+    }
+  ],
+  "brands": [],
+  "raw": [
+    [
+      {
+        "name": "luxuryquickenquiry",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "sousuoyepinlei",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "xiaoxitongzhi",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "open_member",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "aflpayment_recycle",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "yanxuanershoupubuliu",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "accurate_valuation_entrance",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "environmental_recycletxt",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "recommend_property",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "shouyedabaoshou",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "luxuryquickenquiry_modes",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "search_result",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "official_inquiry_subjective",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "huangjinbaojiaye",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "wechat_advertisement",
+        "group": 2,
+        "customGroupName": null
+      },
+      {
+        "name": "official_qualityenquiry",
+        "group": 1,
+        "customGroupName": "c2"
+      }
+    ],
+    {
+      "priceDescription": {
+        "firstContent": "该估价是基于您所提供的物品信息预估的回收价格。爱回收将在收到您的物品并进行专业质检后，提供实际的回收报价。",
+        "secondContent": "*如质检结果与您提供的信息有差异，实际回收报价可能产生变化。"
+      },
+      "aiMappingConfig": {
+        "aiMappingEnable": true,
+        "aiMappingResultConsultantLink": {
+          "h5LinkUrl": "https://page.aihuishou.com/amr/?activityId=7H0HR6SD&agent=ahs_m",
+          "wechatOriginId": "gh_7ee6b4cdb5ff",
+          "wechatAppId": "wx7e490492b4c23e98",
+          "wechatLinkUrl": "/pages-activity/avatar/index?activityId=7H0HR6SD",
+          "appLinkUrl": null,
+          "ttAppId": null,
+          "ttLinkUrl": null,
+          "alipayAppId": null,
+          "alipayLinkUrl": null
+        },
+        "shootInstructionLink": {
+          "h5LinkUrl": "https://page.aihuishou.com/amr/?activityId=NUHVVK59&agent=ahs_m",
+          "wechatOriginId": "gh_7ee6b4cdb5ff",
+          "wechatAppId": "wx7e490492b4c23e98",
+          "wechatLinkUrl": "/pages-activity/avatar/index?activityId=NUHVVK59",
+          "appLinkUrl": null,
+          "ttAppId": null,
+          "ttLinkUrl": null,
+          "alipayAppId": null,
+          "alipayLinkUrl": null
+        },
+        "shootInstructionImageUrl": "https://sr.aihuishou.com/c2b/dubai/luxury/ai-mapping/20250518/bag-instruction.png",
+        "frameImageUrl": "https://sr.aihuishou.com/c2b/dubai/luxury/ai-mapping/20250518/jewelry-frame.png"
+      }
+    },
+    {
+      "photographInquiry": true,
+      "defaultProductId": 67942,
+      "quickInquiry": true,
+      "showPhotographEnter": false
+    },
+    [
+      {
+        "name": "大小",
+        "id": 317,
+        "order": 1,
+        "ppvList": [
+          {
+            "name": "小号",
+            "id": 1455,
+            "order": 1004
+          },
+          {
+            "name": "常规",
+            "id": 1451,
+            "order": 1005
+          }
+        ]
+      },
+      {
+        "name": "材质",
+        "id": 322,
+        "order": 6,
+        "ppvList": [
+          {
+            "name": "牛皮",
+            "id": 1302,
+            "order": 3
+          },
+          {
+            "name": "皮革",
+            "id": 1304,
+            "order": 5
+          }
+        ]
+      },
+      {
+        "name": "内部结构",
+        "id": 323,
+        "order": 7,
+        "ppvList": [
+          {
+            "name": "拉链暗袋",
+            "id": 1513,
+            "order": 4
+          }
+        ]
+      },
+      {
+        "name": "闭合方式",
+        "id": 324,
+        "order": 8,
+        "ppvList": [
+          {
+            "name": "磁扣",
+            "id": 1297,
+            "order": 7
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 213212,
+        "productName": "黄色 牛皮 手拿包 22 658476VCP403458",
+        "title": "黄色 牛皮 手拿包 22 658476VCP403458",
+        "subTitle": "牛皮",
+        "imageUrl": "https://sr.aihuishou.com/image/2773527380859577187.png",
+        "ppvList": [
+          "牛皮"
+        ],
+        "serials": {
+          "code": "231120121442536",
+          "name": "The Triangle",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/334634115559337787.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 213259,
+        "productName": "杏仁色 皮革 手提包 31 652446VCP402700",
+        "title": "杏仁色 皮革 手提包 31 652446VCP402700",
+        "subTitle": "皮革",
+        "imageUrl": "https://sr.aihuishou.com/image/5133634869378720792.png",
+        "ppvList": [
+          "皮革"
+        ],
+        "serials": {
+          "code": "231120121442536",
+          "name": "The Triangle",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/334634115559337787.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 214465,
+        "productName": "蜜桃粉 牛皮 手提包 24 658476-VCP40-7806",
+        "title": "蜜桃粉 牛皮 手提包 24 658476-VCP40-7806",
+        "subTitle": "牛皮",
+        "imageUrl": "https://sr.aihuishou.com/image/1885370540466101389.png",
+        "ppvList": [
+          "牛皮"
+        ],
+        "serials": {
+          "code": "231120121442536",
+          "name": "The Triangle",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/334634115559337787.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 222821,
+        "productName": "Bottega Veneta The Triangle 其他款式",
+        "title": "Bottega Veneta The Triangle 其他款式",
+        "subTitle": "",
+        "imageUrl": "https://sr.aihuishou.com/image/6143488853885904619.png",
+        "ppvList": [],
+        "serials": {
+          "code": "231120121442536",
+          "name": "The Triangle",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/334634115559337787.png"
+        },
+        "extensionCategory": null
+      }
+    ]
+  ]
+}

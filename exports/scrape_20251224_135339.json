@@ -1,0 +1,281 @@
+{
+  "products": [
+    {
+      "id": 213304,
+      "name": "深巧克力色 牛皮 手拿包 28 630363VCP402132",
+      "title": "深巧克力色 牛皮 手拿包 28 630363VCP402132",
+      "subTitle": "褶皱|牛皮",
+      "imageUrl": "https://sr.aihuishou.com/image/8882038541127287729.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "褶皱, 牛皮",
+      "seriesCode": "231225093238425",
+      "seriesName": "The Fringe",
+      "seriesImage": "https://sr.aihuishou.com/image/1026108065204361591.png"
+    },
+    {
+      "id": 214464,
+      "name": "黑色 牛皮 手拿包 28 630363VCP401229",
+      "title": "黑色 牛皮 手拿包 28 630363VCP401229",
+      "subTitle": "纯色|牛皮",
+      "imageUrl": "https://sr.aihuishou.com/image/3222915199095208432.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "纯色, 牛皮",
+      "seriesCode": "231225093238425",
+      "seriesName": "The Fringe",
+      "seriesImage": "https://sr.aihuishou.com/image/1026108065204361591.png"
+    },
+    {
+      "id": 222828,
+      "name": "Bottega Veneta The Fringe 其他款式",
+      "title": "Bottega Veneta The Fringe 其他款式",
+      "subTitle": "",
+      "imageUrl": "https://sr.aihuishou.com/image/2232045327567573746.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "",
+      "seriesCode": "231225093238425",
+      "seriesName": "The Fringe",
+      "seriesImage": "https://sr.aihuishou.com/image/1026108065204361591.png"
+    }
+  ],
+  "brands": [],
+  "raw": [
+    [
+      {
+        "name": "luxuryquickenquiry",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "sousuoyepinlei",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "xiaoxitongzhi",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "open_member",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "aflpayment_recycle",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "yanxuanershoupubuliu",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "accurate_valuation_entrance",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "environmental_recycletxt",
+        "group": 2,
+        "customGroupName": null
+      },
+      {
+        "name": "recommend_property",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "shouyedabaoshou",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "luxuryquickenquiry_modes",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "search_result",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "official_inquiry_subjective",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "huangjinbaojiaye",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "wechat_advertisement",
+        "group": 2,
+        "customGroupName": null
+      },
+      {
+        "name": "official_qualityenquiry",
+        "group": 1,
+        "customGroupName": "c2"
+      }
+    ],
+    {
+      "priceDescription": {
+        "firstContent": "该估价是基于您所提供的物品信息预估的回收价格。爱回收将在收到您的物品并进行专业质检后，提供实际的回收报价。",
+        "secondContent": "*如质检结果与您提供的信息有差异，实际回收报价可能产生变化。"
+      },
+      "aiMappingConfig": {
+        "aiMappingEnable": true,
+        "aiMappingResultConsultantLink": {
+          "h5LinkUrl": "https://page.aihuishou.com/amr/?activityId=7H0HR6SD&agent=ahs_m",
+          "wechatOriginId": "gh_7ee6b4cdb5ff",
+          "wechatAppId": "wx7e490492b4c23e98",
+          "wechatLinkUrl": "/pages-activity/avatar/index?activityId=7H0HR6SD",
+          "appLinkUrl": null,
+          "ttAppId": null,
+          "ttLinkUrl": null,
+          "alipayAppId": null,
+          "alipayLinkUrl": null
+        },
+        "shootInstructionLink": {
+          "h5LinkUrl": "https://page.aihuishou.com/amr/?activityId=NUHVVK59&agent=ahs_m",
+          "wechatOriginId": "gh_7ee6b4cdb5ff",
+          "wechatAppId": "wx7e490492b4c23e98",
+          "wechatLinkUrl": "/pages-activity/avatar/index?activityId=NUHVVK59",
+          "appLinkUrl": null,
+          "ttAppId": null,
+          "ttLinkUrl": null,
+          "alipayAppId": null,
+          "alipayLinkUrl": null
+        },
+        "shootInstructionImageUrl": "https://sr.aihuishou.com/c2b/dubai/luxury/ai-mapping/20250518/bag-instruction.png",
+        "frameImageUrl": "https://sr.aihuishou.com/c2b/dubai/luxury/ai-mapping/20250518/jewelry-frame.png"
+      }
+    },
+    {
+      "photographInquiry": true,
+      "defaultProductId": 67942,
+      "quickInquiry": true,
+      "showPhotographEnter": false
+    },
+    [
+      {
+        "name": "大小",
+        "id": 317,
+        "order": 1,
+        "ppvList": [
+          {
+            "name": "常规",
+            "id": 1451,
+            "order": 1005
+          }
+        ]
+      },
+      {
+        "name": "元素",
+        "id": 321,
+        "order": 5,
+        "ppvList": [
+          {
+            "name": "纯色",
+            "id": 1654,
+            "order": 9
+          },
+          {
+            "name": "褶皱",
+            "id": 2090,
+            "order": 43
+          }
+        ]
+      },
+      {
+        "name": "材质",
+        "id": 322,
+        "order": 6,
+        "ppvList": [
+          {
+            "name": "牛皮",
+            "id": 1302,
+            "order": 3
+          }
+        ]
+      },
+      {
+        "name": "闭合方式",
+        "id": 324,
+        "order": 8,
+        "ppvList": [
+          {
+            "name": "抽带",
+            "id": 1295,
+            "order": 5
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 213304,
+        "productName": "深巧克力色 牛皮 手拿包 28 630363VCP402132",
+        "title": "深巧克力色 牛皮 手拿包 28 630363VCP402132",
+        "subTitle": "褶皱|牛皮",
+        "imageUrl": "https://sr.aihuishou.com/image/8882038541127287729.png",
+        "ppvList": [
+          "褶皱",
+          "牛皮"
+        ],
+        "serials": {
+          "code": "231225093238425",
+          "name": "The Fringe",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/1026108065204361591.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 214464,
+        "productName": "黑色 牛皮 手拿包 28 630363VCP401229",
+        "title": "黑色 牛皮 手拿包 28 630363VCP401229",
+        "subTitle": "纯色|牛皮",
+        "imageUrl": "https://sr.aihuishou.com/image/3222915199095208432.png",
+        "ppvList": [
+          "纯色",
+          "牛皮"
+        ],
+        "serials": {
+          "code": "231225093238425",
+          "name": "The Fringe",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/1026108065204361591.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 222828,
+        "productName": "Bottega Veneta The Fringe 其他款式",
+        "title": "Bottega Veneta The Fringe 其他款式",
+        "subTitle": "",
+        "imageUrl": "https://sr.aihuishou.com/image/2232045327567573746.png",
+        "ppvList": [],
+        "serials": {
+          "code": "231225093238425",
+          "name": "The Fringe",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/1026108065204361591.png"
+        },
+        "extensionCategory": null
+      }
+    ]
+  ]
+}

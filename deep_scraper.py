@@ -19,13 +19,18 @@ from typing import List, Dict, Optional
 
 os.environ['PYTHONIOENCODING'] = 'utf-8'
 
+# Fix Windows encoding
+import io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
+
 
 def log(level: str, msg: str, indent: int = 0):
     try:
         timestamp = datetime.now().strftime("%H:%M:%S")
         prefix = "  " * indent
-        symbols = {"INFO": "ℹ", "OK": "✓", "WARN": "⚠", "ERR": "✗", "TIME": "⏱"}
-        symbol = symbols.get(level, "•")
+        symbols = {"INFO": "[i]", "OK": "[+]", "WARN": "[!]", "ERR": "[x]", "TIME": "[t]"}
+        symbol = symbols.get(level, "*")
         print(f"[{timestamp}] {prefix}{symbol} {msg}")
     except:
         pass
@@ -43,6 +48,20 @@ class DeepScraper:
     MAX_SCROLL = 3        # Reduced from 5
     MAX_CONCURRENT = 3    # Parallel brand processing
     
+    # Category ID mapping: frontCategoryId -> (categoryId, bizType, name)
+    CATEGORY_MAP = {
+        # Watches 奢腕表
+        "145": (138, 2, "Watches"),
+        # Bags 包袋  
+        "166": (340, 2, "Bags"),
+        # Phones 手机
+        "1": (1, 1, "Phone"),
+        # Shoes 潮鞋
+        "181": (341, 2, "Shoes"),
+        # Jewelry 珠宝首饰
+        "188": (342, 2, "Jewelry"),
+    }
+    
     def __init__(self):
         self.brands: List[Dict] = []
         self.collections: List[Dict] = []  # For 4-level path
@@ -55,6 +74,7 @@ class DeepScraper:
         self.front_category_id: Optional[str] = None
         self.category_id: Optional[int] = None
         self.biz_type: int = 2
+        self.category_name: str = "Unknown"
         
         # Stats
         self.stats = {"brands": 0, "collections": 0, "products": 0, "errors": 0}
@@ -122,16 +142,25 @@ class DeepScraper:
         return self.products
     
     def _parse_url(self, url: str):
-        """Extract category info from URL"""
+        """Extract category info from URL and lookup categoryId from map"""
         parsed = urlparse(url)
         query = parsed.query or (parsed.fragment.split('?')[1] if '?' in parsed.fragment else '')
         params = parse_qs(query)
         
         self.front_category_id = params.get('subFrontCategoryId', params.get('frontCategoryId', [None]))[0]
-        if 'categoryId' in params:
-            self.category_id = int(params['categoryId'][0])
-        if 'bizType' in params:
-            self.biz_type = int(params['bizType'][0])
+        
+        # Lookup from CATEGORY_MAP
+        if self.front_category_id and self.front_category_id in self.CATEGORY_MAP:
+            cat_info = self.CATEGORY_MAP[self.front_category_id]
+            self.category_id = cat_info[0]
+            self.biz_type = cat_info[1]
+            self.category_name = cat_info[2]
+        else:
+            # Fallback to URL params
+            if 'categoryId' in params:
+                self.category_id = int(params['categoryId'][0])
+            if 'bizType' in params:
+                self.biz_type = int(params['bizType'][0])
     
     async def _set_cookies(self, context):
         await context.add_cookies([{
@@ -339,8 +368,8 @@ class DeepScraper:
         print("  AIHUISHOU DEEP SCRAPER v4")
         print("  Supports 3-level and 4-level paths")
         print("=" * 60)
-        log("INFO", f"frontCategoryId: {self.front_category_id}")
-        log("INFO", f"categoryId: {self.category_id}")
+        log("INFO", f"Category: {self.category_name}")
+        log("INFO", f"frontCategoryId: {self.front_category_id} -> categoryId: {self.category_id}")
         print()
     
     def _print_summary(self):
@@ -410,7 +439,7 @@ async def main():
         export_json(products)
         
         print()
-        print(f"✅ RESULTS: {len(products)} products scraped!")
+        print(f"[DONE] RESULTS: {len(products)} products scraped!")
     else:
         log("ERR", "No products found!")
 

@@ -1,0 +1,280 @@
+{
+  "products": [
+    {
+      "id": 213237,
+      "name": "黑色 羊皮 手拿包 19 701023V1W518425",
+      "title": "黑色 羊皮 手拿包 19 701023V1W518425",
+      "subTitle": "羊皮",
+      "imageUrl": "https://sr.aihuishou.com/image/2930673400278168122.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "羊皮",
+      "seriesCode": "231120121314348",
+      "seriesName": "Turn",
+      "seriesImage": "https://sr.aihuishou.com/image/7116019761730969309.png"
+    },
+    {
+      "id": 213317,
+      "name": "紫色 羊皮 手拿包 37 701024V1W515311",
+      "title": "紫色 羊皮 手拿包 37 701024V1W515311",
+      "subTitle": "车缝线|羊皮",
+      "imageUrl": "https://sr.aihuishou.com/image/7554343081609059504.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "车缝线, 羊皮",
+      "seriesCode": "231120121314348",
+      "seriesName": "Turn",
+      "seriesImage": "https://sr.aihuishou.com/image/7116019761730969309.png"
+    },
+    {
+      "id": 222822,
+      "name": "Bottega Veneta Turn 其他款式",
+      "title": "Bottega Veneta Turn 其他款式",
+      "subTitle": "",
+      "imageUrl": "https://sr.aihuishou.com/image/1733294516848713256.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "",
+      "seriesCode": "231120121314348",
+      "seriesName": "Turn",
+      "seriesImage": "https://sr.aihuishou.com/image/7116019761730969309.png"
+    }
+  ],
+  "brands": [],
+  "raw": [
+    [
+      {
+        "name": "luxuryquickenquiry",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "sousuoyepinlei",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "xiaoxitongzhi",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "open_member",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "aflpayment_recycle",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "yanxuanershoupubuliu",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "accurate_valuation_entrance",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "environmental_recycletxt",
+        "group": 3,
+        "customGroupName": null
+      },
+      {
+        "name": "recommend_property",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "shouyedabaoshou",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "luxuryquickenquiry_modes",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "search_result",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "official_inquiry_subjective",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "huangjinbaojiaye",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "wechat_advertisement",
+        "group": 2,
+        "customGroupName": null
+      },
+      {
+        "name": "official_qualityenquiry",
+        "group": 1,
+        "customGroupName": "c2"
+      }
+    ],
+    {
+      "priceDescription": {
+        "firstContent": "该估价是基于您所提供的物品信息预估的回收价格。爱回收将在收到您的物品并进行专业质检后，提供实际的回收报价。",
+        "secondContent": "*如质检结果与您提供的信息有差异，实际回收报价可能产生变化。"
+      },
+      "aiMappingConfig": {
+        "aiMappingEnable": true,
+        "aiMappingResultConsultantLink": {
+          "h5LinkUrl": "https://page.aihuishou.com/amr/?activityId=7H0HR6SD&agent=ahs_m",
+          "wechatOriginId": "gh_7ee6b4cdb5ff",
+          "wechatAppId": "wx7e490492b4c23e98",
+          "wechatLinkUrl": "/pages-activity/avatar/index?activityId=7H0HR6SD",
+          "appLinkUrl": null,
+          "ttAppId": null,
+          "ttLinkUrl": null,
+          "alipayAppId": null,
+          "alipayLinkUrl": null
+        },
+        "shootInstructionLink": {
+          "h5LinkUrl": "https://page.aihuishou.com/amr/?activityId=NUHVVK59&agent=ahs_m",
+          "wechatOriginId": "gh_7ee6b4cdb5ff",
+          "wechatAppId": "wx7e490492b4c23e98",
+          "wechatLinkUrl": "/pages-activity/avatar/index?activityId=NUHVVK59",
+          "appLinkUrl": null,
+          "ttAppId": null,
+          "ttLinkUrl": null,
+          "alipayAppId": null,
+          "alipayLinkUrl": null
+        },
+        "shootInstructionImageUrl": "https://sr.aihuishou.com/c2b/dubai/luxury/ai-mapping/20250518/bag-instruction.png",
+        "frameImageUrl": "https://sr.aihuishou.com/c2b/dubai/luxury/ai-mapping/20250518/jewelry-frame.png"
+      }
+    },
+    {
+      "photographInquiry": true,
+      "defaultProductId": 67942,
+      "quickInquiry": true,
+      "showPhotographEnter": false
+    },
+    [
+      {
+        "name": "大小",
+        "id": 317,
+        "order": 1,
+        "ppvList": [
+          {
+            "name": "小号",
+            "id": 1455,
+            "order": 1004
+          },
+          {
+            "name": "常规",
+            "id": 1451,
+            "order": 1005
+          }
+        ]
+      },
+      {
+        "name": "元素",
+        "id": 321,
+        "order": 5,
+        "ppvList": [
+          {
+            "name": "车缝线",
+            "id": 1653,
+            "order": 8
+          }
+        ]
+      },
+      {
+        "name": "材质",
+        "id": 322,
+        "order": 6,
+        "ppvList": [
+          {
+            "name": "羊皮",
+            "id": 1305,
+            "order": 6
+          }
+        ]
+      },
+      {
+        "name": "闭合方式",
+        "id": 324,
+        "order": 8,
+        "ppvList": [
+          {
+            "name": "拉链",
+            "id": 1227,
+            "order": 1
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 213237,
+        "productName": "黑色 羊皮 手拿包 19 701023V1W518425",
+        "title": "黑色 羊皮 手拿包 19 701023V1W518425",
+        "subTitle": "羊皮",
+        "imageUrl": "https://sr.aihuishou.com/image/2930673400278168122.png",
+        "ppvList": [
+          "羊皮"
+        ],
+        "serials": {
+          "code": "231120121314348",
+          "name": "Turn",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/7116019761730969309.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 213317,
+        "productName": "紫色 羊皮 手拿包 37 701024V1W515311",
+        "title": "紫色 羊皮 手拿包 37 701024V1W515311",
+        "subTitle": "车缝线|羊皮",
+        "imageUrl": "https://sr.aihuishou.com/image/7554343081609059504.png",
+        "ppvList": [
+          "车缝线",
+          "羊皮"
+        ],
+        "serials": {
+          "code": "231120121314348",
+          "name": "Turn",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/7116019761730969309.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 222822,
+        "productName": "Bottega Veneta Turn 其他款式",
+        "title": "Bottega Veneta Turn 其他款式",
+        "subTitle": "",
+        "imageUrl": "https://sr.aihuishou.com/image/1733294516848713256.png",
+        "ppvList": [],
+        "serials": {
+          "code": "231120121314348",
+          "name": "Turn",
+          "nameAlpha": null,
+          "imageUrl": "https://sr.aihuishou.com/image/7116019761730969309.png"
+        },
+        "extensionCategory": null
+      }
+    ]
+  ]
+}

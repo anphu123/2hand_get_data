@@ -1,0 +1,242 @@
+{
+  "products": [
+    {
+      "id": 213272,
+      "name": "深绿色 羊皮 单肩包 37.5 740990VCPP13002",
+      "title": "深绿色 羊皮 单肩包 37.5 740990VCPP13002",
+      "subTitle": "羊皮",
+      "imageUrl": "https://sr.aihuishou.com/image/4893695728848082293.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "羊皮",
+      "seriesCode": "250905103522023",
+      "seriesName": "Solstice",
+      "seriesImage": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/mpms/1757039720460oo1vhac2opm/8364092029088800293.png"
+    },
+    {
+      "id": 222825,
+      "name": "Bottega Veneta Solstice 其他款式",
+      "title": "Bottega Veneta Solstice 其他款式",
+      "subTitle": "",
+      "imageUrl": "https://sr.aihuishou.com/image/3061242675018215968.png",
+      "bizType": 2,
+      "categoryId": 340,
+      "ppvList": "",
+      "seriesCode": "250905103522023",
+      "seriesName": "Solstice",
+      "seriesImage": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/mpms/1757039720460oo1vhac2opm/8364092029088800293.png"
+    }
+  ],
+  "brands": [],
+  "raw": [
+    [
+      {
+        "name": "luxuryquickenquiry",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "sousuoyepinlei",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "xiaoxitongzhi",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "open_member",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "aflpayment_recycle",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "yanxuanershoupubuliu",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "accurate_valuation_entrance",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "environmental_recycletxt",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "recommend_property",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "shouyedabaoshou",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "luxuryquickenquiry_modes",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "search_result",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "official_inquiry_subjective",
+        "group": 1,
+        "customGroupName": null
+      },
+      {
+        "name": "huangjinbaojiaye",
+        "group": 0,
+        "customGroupName": null
+      },
+      {
+        "name": "wechat_advertisement",
+        "group": 2,
+        "customGroupName": null
+      },
+      {
+        "name": "official_qualityenquiry",
+        "group": 1,
+        "customGroupName": "c2"
+      }
+    ],
+    {
+      "priceDescription": {
+        "firstContent": "该估价是基于您所提供的物品信息预估的回收价格。爱回收将在收到您的物品并进行专业质检后，提供实际的回收报价。",
+        "secondContent": "*如质检结果与您提供的信息有差异，实际回收报价可能产生变化。"
+      },
+      "aiMappingConfig": {
+        "aiMappingEnable": true,
+        "aiMappingResultConsultantLink": {
+          "h5LinkUrl": "https://page.aihuishou.com/amr/?activityId=7H0HR6SD&agent=ahs_m",
+          "wechatOriginId": "gh_7ee6b4cdb5ff",
+          "wechatAppId": "wx7e490492b4c23e98",
+          "wechatLinkUrl": "/pages-activity/avatar/index?activityId=7H0HR6SD",
+          "appLinkUrl": null,
+          "ttAppId": null,
+          "ttLinkUrl": null,
+          "alipayAppId": null,
+          "alipayLinkUrl": null
+        },
+        "shootInstructionLink": {
+          "h5LinkUrl": "https://page.aihuishou.com/amr/?activityId=NUHVVK59&agent=ahs_m",
+          "wechatOriginId": "gh_7ee6b4cdb5ff",
+          "wechatAppId": "wx7e490492b4c23e98",
+          "wechatLinkUrl": "/pages-activity/avatar/index?activityId=NUHVVK59",
+          "appLinkUrl": null,
+          "ttAppId": null,
+          "ttLinkUrl": null,
+          "alipayAppId": null,
+          "alipayLinkUrl": null
+        },
+        "shootInstructionImageUrl": "https://sr.aihuishou.com/c2b/dubai/luxury/ai-mapping/20250518/bag-instruction.png",
+        "frameImageUrl": "https://sr.aihuishou.com/c2b/dubai/luxury/ai-mapping/20250518/jewelry-frame.png"
+      }
+    },
+    {
+      "photographInquiry": true,
+      "defaultProductId": 67942,
+      "quickInquiry": true,
+      "showPhotographEnter": false
+    },
+    [
+      {
+        "name": "大小",
+        "id": 317,
+        "order": 1,
+        "ppvList": [
+          {
+            "name": "中号",
+            "id": 1456,
+            "order": 1006
+          }
+        ]
+      },
+      {
+        "name": "材质",
+        "id": 322,
+        "order": 6,
+        "ppvList": [
+          {
+            "name": "羊皮",
+            "id": 1305,
+            "order": 6
+          }
+        ]
+      },
+      {
+        "name": "内部结构",
+        "id": 323,
+        "order": 7,
+        "ppvList": [
+          {
+            "name": "独立内胆",
+            "id": 1620,
+            "order": 9
+          }
+        ]
+      },
+      {
+        "name": "闭合方式",
+        "id": 324,
+        "order": 8,
+        "ppvList": [
+          {
+            "name": "敞口",
+            "id": 1294,
+            "order": 4
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 213272,
+        "productName": "深绿色 羊皮 单肩包 37.5 740990VCPP13002",
+        "title": "深绿色 羊皮 单肩包 37.5 740990VCPP13002",
+        "subTitle": "羊皮",
+        "imageUrl": "https://sr.aihuishou.com/image/4893695728848082293.png",
+        "ppvList": [
+          "羊皮"
+        ],
+        "serials": {
+          "code": "250905103522023",
+          "name": "Solstice",
+          "nameAlpha": null,
+          "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/mpms/1757039720460oo1vhac2opm/8364092029088800293.png"
+        },
+        "extensionCategory": null
+      },
+      {
+        "bizType": 2,
+        "categoryId": 340,
+        "productId": 222825,
+        "productName": "Bottega Veneta Solstice 其他款式",
+        "title": "Bottega Veneta Solstice 其他款式",
+        "subTitle": "",
+        "imageUrl": "https://sr.aihuishou.com/image/3061242675018215968.png",
+        "ppvList": [],
+        "serials": {
+          "code": "250905103522023",
+          "name": "Solstice",
+          "nameAlpha": null,
+          "imageUrl": "https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/mpms/1757039720460oo1vhac2opm/8364092029088800293.png"
+        },
+        "extensionCategory": null
+      }
+    ]
+  ]
+}

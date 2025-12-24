@@ -38,3 +38,101 @@
 13:37:13 | INFO    | 🚀 Server starting...
 13:37:22 | INFO    | [133722-0928] ▶ GET /
 13:37:22 | INFO    | [133722-0928] ✅ 200 | 3ms
+13:37:33 | INFO    | [133733-0928] ▶ POST /api/deep-scrape
+13:37:33 | DEBUG   | [133733-0928] Body: {"url": "https://m.aihuishou.com/n/#/category?amp%3BsubFrontCategoryId=145&cityId=31&cityName=%E5%8C%97%E4%BA%AC%E5%B8%82&cityOriginName=%E5%8C%97%E4%BA%AC%E5%B8%82&frontCategoryId=165&subFrontCategor
+13:37:33 | INFO    | 🔥 Starting DEEP scrape: https://m.aihuishou.com/n/#/category?amp%3BsubFrontCategoryI...
+13:38:35 | INFO    | 📁 Auto-exported: exports\deep_scrape_20251224_133835.json (170 items)
+13:38:35 | INFO    | ✅ Deep scrape complete: 170 products in 61.9s
+13:38:35 | INFO    | [133733-0928] ✅ 200 | 61880ms
+13:38:35 | DEBUG   | [133733-0928] Response size: 57.4KB
+13:39:23 | INFO    | [133923-0928] ▶ POST /api/deep-scrape
+13:39:23 | DEBUG   | [133923-0928] Body: {"url": "https://m.aihuishou.com/n/#/category?amp%3BsubFrontCategoryId=145&cityId=31&cityName=%E5%8C%97%E4%BA%AC%E5%B8%82&cityOriginName=%E5%8C%97%E4%BA%AC%E5%B8%82&frontCategoryId=165&subFrontCategor
+13:39:23 | INFO    | 🔥 Starting DEEP scrape: https://m.aihuishou.com/n/#/category?amp%3BsubFrontCategoryI...
+13:39:29 | INFO    | [133923-0928] ✅ 200 | 5602ms
+13:39:29 | DEBUG   | [133923-0928] Response size: 0.0KB
+13:39:59 | INFO    | [133959-0928] ▶ POST /api/deep-scrape
+13:39:59 | DEBUG   | [133959-0928] Body: {"url": "https://m.aihuishou.com/n/#/category?amp%3BsubFrontCategoryId=145&cityId=31&cityName=%E5%8C%97%E4%BA%AC%E5%B8%82&cityOriginName=%E5%8C%97%E4%BA%AC%E5%B8%82&frontCategoryId=165&subFrontCategor
+13:39:59 | INFO    | 🔥 Starting DEEP scrape: https://m.aihuishou.com/n/#/category?amp%3BsubFrontCategoryI...
+13:41:02 | INFO    | 📁 Auto-exported: exports\deep_scrape_20251224_134102.json (170 items)
+13:41:02 | INFO    | ✅ Deep scrape complete: 170 products in 62.7s
+13:41:02 | INFO    | [133959-0928] ✅ 200 | 62747ms
+13:41:02 | DEBUG   | [133959-0928] Response size: 57.4KB
+13:43:17 | INFO    | [134317-0928] ▶ POST /api/scrape
+13:43:17 | DEBUG   | [134317-0928] Body: {"url": "https://m.aihuishou.com/p/main/recycle/spu-list?brandId=2180&categoryId=340&frontCategoryId=166&bizType=2&brand=Bottega%20Veneta%2F%E8%91%86%E8%9D%B6%E5%AE%B6&seriesCode=251208143809780&title
+13:43:17 | INFO    | 🔍 Starting scrape: https://m.aihuishou.com/p/main/recycle/spu-list?brandId=2180...
+13:43:42 | INFO    | 📁 Auto-exported: exports\scrape_20251224_134342.json (120 items)
+13:43:42 | INFO    | ✅ Scrape complete: 120 products
+13:43:42 | INFO    | [134317-0928] ✅ 200 | 25207ms
+13:43:42 | DEBUG   | [134317-0928] Response size: 161.3KB
+13:44:46 | INFO    | [134446-0928] ▶ POST /api/deep-scrape
+13:44:46 | DEBUG   | [134446-0928] Body: {"url": "https://m.aihuishou.com/n/#/category?amp%3BsubFrontCategoryId=145&cityId=31&cityName=%E5%8C%97%E4%BA%AC%E5%B8%82&cityOriginName=%E5%8C%97%E4%BA%AC%E5%B8%82&frontCategoryId=7"}
+13:44:46 | INFO    | 🔥 Starting DEEP scrape: https://m.aihuishou.com/n/#/category?amp%3BsubFrontCategoryI...
+13:44:49 | INFO    | [134449-0928] ▶ POST /api/scrape
+13:44:49 | DEBUG   | [134449-0928] Body: {"url": "https://m.aihuishou.com/p/main/recycle/spu-list?brandId=2180&categoryId=340&frontCategoryId=166&bizType=2&brand=Bottega%20Veneta%2F%E8%91%86%E8%9D%B6%E5%AE%B6&seriesCode=231120121533824&title
+13:44:49 | INFO    | 🔍 Starting scrape: https://m.aihuishou.com/p/main/recycle/spu-list?brandId=2180...
+13:45:05 | INFO    | 📁 Auto-exported: exports\scrape_20251224_134505.json (3 items)
+13:45:05 | INFO    | ✅ Scrape complete: 3 products
+13:45:05 | INFO    | [134449-0928] ✅ 200 | 15452ms
+13:45:05 | DEBUG   | [134449-0928] Response size: 8.2KB
+13:45:11 | INFO    | 🚀 Server starting...
+13:45:29 | INFO    | 🚀 Server starting...
+13:45:37 | INFO    | [134537-4608] ▶ POST /api/deep-scrape
+13:45:37 | DEBUG   | [134537-4608] Body: {"url": "https://m.aihuishou.com/n/#/category?amp%3BsubFrontCategoryId=145&cityId=31&cityName=%E5%8C%97%E4%BA%AC%E5%B8%82&cityOriginName=%E5%8C%97%E4%BA%AC%E5%B8%82&frontCategoryId=7"}
+13:45:37 | INFO    | 🔥 Starting DEEP scrape: https://m.aihuishou.com/n/#/category?amp%3BsubFrontCategoryI...
+13:45:52 | INFO    | [134552-4608] ▶ POST /api/scrape
+13:45:52 | DEBUG   | [134552-4608] Body: {"url": "https://m.aihuishou.com/p/main/recycle/spu-list?brandId=2180&categoryId=340&frontCategoryId=166&bizType=2&brand=Bottega%20Veneta%2F%E8%91%86%E8%9D%B6%E5%AE%B6&seriesCode=250905103522023&title
+13:45:52 | INFO    | 🔍 Starting scrape: https://m.aihuishou.com/p/main/recycle/spu-list?brandId=2180...
+13:46:00 | INFO    | [134537-4608] ✅ 200 | 22763ms
+13:46:00 | DEBUG   | [134537-4608] Response size: 0.0KB
+13:46:07 | INFO    | 📁 Auto-exported: exports\scrape_20251224_134607.json (2 items)
+13:46:07 | INFO    | ✅ Scrape complete: 2 products
+13:46:07 | INFO    | [134552-4608] ✅ 200 | 15179ms
+13:46:07 | DEBUG   | [134552-4608] Response size: 7.1KB
+13:46:28 | INFO    | [134628-4608] ▶ POST /api/deep-scrape
+13:46:28 | DEBUG   | [134628-4608] Body: {"url": "https://m.aihuishou.com/n/#/category?amp%3BsubFrontCategoryId=145&cityId=31&cityName=%E5%8C%97%E4%BA%AC%E5%B8%82&cityOriginName=%E5%8C%97%E4%BA%AC%E5%B8%82&frontCategoryId=165&subFrontCategor
+13:46:28 | INFO    | 🔥 Starting DEEP scrape: https://m.aihuishou.com/n/#/category?amp%3BsubFrontCategoryI...
+13:46:30 | INFO    | [134630-4608] ▶ POST /api/scrape
+13:46:30 | DEBUG   | [134630-4608] Body: {"url": "https://m.aihuishou.com/p/main/recycle/spu-list?brandId=2180&categoryId=340&frontCategoryId=166&bizType=2&brand=Bottega%20Veneta%2F%E8%91%86%E8%9D%B6%E5%AE%B6&seriesCode=230628002949031&title
+13:46:30 | INFO    | 🔍 Starting scrape: https://m.aihuishou.com/p/main/recycle/spu-list?brandId=2180...
+13:46:46 | INFO    | 📁 Auto-exported: exports\scrape_20251224_134646.json (4 items)
+13:46:46 | INFO    | ✅ Scrape complete: 4 products
+13:46:46 | INFO    | [134630-4608] ✅ 200 | 15480ms
+13:46:46 | DEBUG   | [134630-4608] Response size: 10.1KB
+13:47:39 | INFO    | 📁 Auto-exported: exports\deep_scrape_20251224_134739.json (136 items)
+13:47:39 | INFO    | ✅ Deep scrape complete: 136 products in 72.0s
+13:47:39 | INFO    | [134628-4608] ✅ 200 | 71955ms
+13:47:39 | DEBUG   | [134628-4608] Response size: 45.7KB
+13:48:10 | INFO    | [134810-4608] ▶ POST /api/scrape
+13:48:10 | DEBUG   | [134810-4608] Body: {"url": "https://m.aihuishou.com/p/main/recycle/spu-list?brandId=2180&categoryId=340&frontCategoryId=166&bizType=2&brand=Bottega%20Veneta%2F%E8%91%86%E8%9D%B6%E5%AE%B6&seriesCode=231120121139610&title
+13:48:10 | INFO    | 🔍 Starting scrape: https://m.aihuishou.com/p/main/recycle/spu-list?brandId=2180...
+13:48:26 | INFO    | 📁 Auto-exported: exports\scrape_20251224_134826.json (3 items)
+13:48:26 | INFO    | ✅ Scrape complete: 3 products
+13:48:26 | INFO    | [134810-4608] ✅ 200 | 15797ms
+13:48:26 | DEBUG   | [134810-4608] Response size: 8.2KB
+13:48:42 | INFO    | [134842-4608] ▶ POST /api/scrape
+13:48:42 | DEBUG   | [134842-4608] Body: {"url": "https://m.aihuishou.com/p/main/recycle/spu-list?brandId=2180&categoryId=340&frontCategoryId=166&bizType=2&brand=Bottega%20Veneta%2F%E8%91%86%E8%9D%B6%E5%AE%B6&seriesCode=231120121314348&title
+13:48:42 | INFO    | 🔍 Starting scrape: https://m.aihuishou.com/p/main/recycle/spu-list?brandId=2180...
+13:48:57 | INFO    | 📁 Auto-exported: exports\scrape_20251224_134857.json (3 items)
+13:48:57 | INFO    | ✅ Scrape complete: 3 products
+13:48:57 | INFO    | [134842-4608] ✅ 200 | 14975ms
+13:48:57 | DEBUG   | [134842-4608] Response size: 8.2KB
+13:49:20 | INFO    | [134920-4608] ▶ POST /api/scrape
+13:49:20 | DEBUG   | [134920-4608] Body: {"url": "https://m.aihuishou.com/p/main/recycle/spu-list?brandId=2180&categoryId=340&frontCategoryId=166&bizType=2&brand=Bottega%20Veneta%2F%E8%91%86%E8%9D%B6%E5%AE%B6&seriesCode=231120121333213&title
+13:49:20 | INFO    | 🔍 Starting scrape: https://m.aihuishou.com/p/main/recycle/spu-list?brandId=2180...
+13:49:56 | INFO    | 📁 Auto-exported: exports\scrape_20251224_134956.json (4 items)
+13:49:56 | INFO    | ✅ Scrape complete: 4 products
+13:49:56 | INFO    | [134920-4608] ✅ 200 | 36464ms
+13:49:56 | DEBUG   | [134920-4608] Response size: 10.2KB
+13:50:09 | INFO    | 🚀 Server starting...
+13:50:24 | INFO    | [135024-4560] ▶ POST /api/scrape
+13:50:24 | DEBUG   | [135024-4560] Body: {"url": "https://m.aihuishou.com/p/main/recycle/spu-list?brandId=2180&categoryId=340&frontCategoryId=166&bizType=2&brand=Bottega%20Veneta%2F%E8%91%86%E8%9D%B6%E5%AE%B6&seriesCode=231120121438491&title
+13:50:24 | INFO    | 🔍 Starting scrape: https://m.aihuishou.com/p/main/recycle/spu-list?brandId=2180...
+13:50:38 | INFO    | 📁 Auto-exported: exports\scrape_20251224_135038.json (3 items)
+13:50:38 | INFO    | ✅ Scrape complete: 3 products
+13:50:38 | INFO    | [135024-4560] ✅ 200 | 14726ms
+13:50:38 | DEBUG   | [135024-4560] Response size: 7.9KB
+13:50:40 | INFO    | 🚀 Server starting...
+13:50:55 | INFO    | [135055-3872] ▶ POST /api/scrape
+13:50:55 | DEBUG   | [135055-3872] Body: {"url": "https://m.aihuishou.com/p/main/recycle/spu-list?brandId=2180&categoryId=340&frontCategoryId=166&bizType=2&brand=Bottega%20Veneta%2F%E8%91%86%E8%9D%B6%E5%AE%B6&seriesCode=231120121442536&title
+13:50:55 | INFO    | 🔍 Starting scrape: https://m.aihuishou.com/p/main/recycle/spu-list?brandId=2180...
+13:50:58 | INFO    | 🚀 Server starting...
