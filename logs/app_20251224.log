@@ -1,0 +1,23 @@
+11:31:08 | INFO    | 🚀 Server starting...
+11:31:09 | INFO    | 🚀 Server starting...
+11:31:15 | INFO    | [113115-0256] ▶ GET /
+11:31:15 | INFO    | [113115-0256] ✅ 200 | 4ms
+11:31:21 | INFO    | [113121-0256] ▶ POST /api/deep-scrape
+11:31:21 | DEBUG   | [113121-0256] Body: {"url": "https://m.aihuishou.com/p/main/recycle/spu-list?brandId=808&categoryId=138&frontCategoryId=145&bizType=2&brand=%E7%99%BE%E8%BE%BE%E7%BF%A1%E4%B8%BD&seriesCode=230627212201476&title=%E8%BF%90%
+11:31:21 | INFO    | 🔥 Starting DEEP scrape: https://m.aihuishou.com/p/main/recycle/spu-list?brandId=808&...
+11:31:29 | INFO    | [113121-0256] ✅ 200 | 8718ms
+11:31:29 | DEBUG   | [113121-0256] Response size: 0.0KB
+11:32:01 | INFO    | [113201-0256] ▶ POST /api/deep-scrape
+11:32:01 | DEBUG   | [113201-0256] Body: {"url": "https://m.aihuishou.com/n/#/category?amp%3BsubFrontCategoryId=145&cityId=31&cityName=%E5%8C%97%E4%BA%AC%E5%B8%82&cityOriginName=%E5%8C%97%E4%BA%AC%E5%B8%82&frontCategoryId=165&subFrontCategor
+11:32:01 | INFO    | 🔥 Starting DEEP scrape: https://m.aihuishou.com/n/#/category?amp%3BsubFrontCategoryI...
+11:36:02 | INFO    | 📁 Auto-exported: exports\deep_scrape_20251224_113602.json (208 items)
+11:36:02 | INFO    | ✅ Deep scrape complete: 208 products in 241.3s
+11:36:02 | INFO    | [113201-0256] ✅ 200 | 241259ms
+11:36:02 | DEBUG   | [113201-0256] Response size: 64.9KB
+11:37:37 | INFO    | [113737-0256] ▶ POST /api/deep-scrape
+11:37:37 | DEBUG   | [113737-0256] Body: {"url": "https://m.aihuishou.com/n/#/category?amp%3BsubFrontCategoryId=145&cityId=31&cityName=%E5%8C%97%E4%BA%AC%E5%B8%82&cityOriginName=%E5%8C%97%E4%BA%AC%E5%B8%82&frontCategoryId=165&subFrontCategor
+11:37:37 | INFO    | 🔥 Starting DEEP scrape: https://m.aihuishou.com/n/#/category?amp%3BsubFrontCategoryI...
+11:41:40 | INFO    | 📁 Auto-exported: exports\deep_scrape_20251224_114140.json (208 items)
+11:41:40 | INFO    | ✅ Deep scrape complete: 208 products in 242.8s
+11:41:40 | INFO    | [113737-0256] ✅ 200 | 242826ms
+11:41:40 | DEBUG   | [113737-0256] Response size: 64.9KB

@@ -7,17 +7,116 @@ Run: python app.py
 Open: http://localhost:5000
 """
 
-from flask import Flask, render_template_string, request, jsonify, Response
+from flask import Flask, render_template_string, request, jsonify, Response, g
 import asyncio
 import sys
 import io
 import json
 import csv
+import time
+import logging
 from datetime import datetime
+from functools import wraps
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+# Set UTF-8 encoding for Windows console (safe version)
+import os
+os.environ['PYTHONIOENCODING'] = 'utf-8'
+
+# ============ LOGGING CONFIGURATION ============
+LOG_DIR = "logs"
+os.makedirs(LOG_DIR, exist_ok=True)
+
+# Create logger
+logger = logging.getLogger('aihuishou')
+logger.setLevel(logging.DEBUG)
+
+# File handler - detailed logs
+file_handler = logging.FileHandler(
+    os.path.join(LOG_DIR, f"app_{datetime.now().strftime('%Y%m%d')}.log"),
+    encoding='utf-8'
+)
+file_handler.setLevel(logging.DEBUG)
+file_formatter = logging.Formatter(
+    '%(asctime)s | %(levelname)-7s | %(message)s',
+    datefmt='%H:%M:%S'
+)
+file_handler.setFormatter(file_formatter)
+
+# Console handler - info only
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.INFO)
+console_formatter = logging.Formatter(
+    '\033[36m%(asctime)s\033[0m | %(levelname)-7s | %(message)s',
+    datefmt='%H:%M:%S'
+)
+console_handler.setFormatter(console_formatter)
+
+logger.addHandler(file_handler)
+logger.addHandler(console_handler)
 
 app = Flask(__name__)
+
+
+# ============ REQUEST LOGGING MIDDLEWARE ============
+@app.before_request
+def before_request():
+    """Log incoming requests and start timer"""
+    g.start_time = time.perf_counter()
+    g.request_id = f"{datetime.now().strftime('%H%M%S')}-{id(request) % 10000:04d}"
+    
+    logger.info(f"[{g.request_id}] ▶ {request.method} {request.path}")
+    
+    if request.is_json and request.data:
+        try:
+            body = request.get_json()
+            logger.debug(f"[{g.request_id}] Body: {json.dumps(body, ensure_ascii=False)[:200]}")
+        except:
+            pass
+
+
+@app.after_request
+def after_request(response):
+    """Log response and timing"""
+    elapsed = (time.perf_counter() - g.start_time) * 1000
+    
+    status_emoji = "✅" if response.status_code < 400 else "❌"
+    logger.info(f"[{g.request_id}] {status_emoji} {response.status_code} | {elapsed:.0f}ms")
+    
+    # Log response size for API calls
+    if request.path.startswith('/api/'):
+        size = len(response.data) if response.data else 0
+        logger.debug(f"[{g.request_id}] Response size: {size/1024:.1f}KB")
+    
+    return response
+
+
+# ============ AUTO EXPORT FUNCTION ============
+def auto_export(data, prefix="auto"):
+    """Auto-save scraped data to files"""
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    export_dir = "exports"
+    os.makedirs(export_dir, exist_ok=True)
+    
+    # Count items
+    item_count = 0
+    if isinstance(data, dict) and 'products' in data:
+        item_count = len(data.get('products', []))
+    elif isinstance(data, list):
+        item_count = len(data)
+    
+    if item_count == 0:
+        logger.warning("No data to auto-export")
+        return None
+    
+    # Save JSON
+    json_file = os.path.join(export_dir, f"{prefix}_{timestamp}.json")
+    with open(json_file, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    
+    logger.info(f"📁 Auto-exported: {json_file} ({item_count} items)")
+    return json_file
+
+
 
 HTML_TEMPLATE = """
 <!DOCTYPE html>
@@ -210,12 +309,16 @@ HTML_TEMPLATE = """
             <div class="input-group">
                 <input type="text" id="urlInput" placeholder="Paste aihuishou.com URL here...">
                 <button class="btn btn-primary" id="scrapeBtn" onclick="scrape()">Scrape</button>
+                <button class="btn btn-primary" id="deepScrapeBtn" onclick="deepScrape()" style="background: linear-gradient(135deg, #f59e0b, #ef4444);">🔥 Deep Scrape</button>
             </div>
+            <p style="color: var(--muted); font-size: 12px; margin-top: 10px;">
+                <b>Scrape</b>: Single page | <b>Deep Scrape</b>: Category → Brands → Series → Products (3 levels)
+            </p>
         </div>
         
         <div class="loading" id="loading">
             <div class="spinner"></div>
-            <p>Scraping data... This may take 15-30 seconds</p>
+            <p id="loadingText">Scraping data... This may take 15-30 seconds</p>
         </div>
         
         <div class="results-card" id="results">
@@ -273,12 +376,15 @@ HTML_TEMPLATE = """
         let selectedColumns = [];  // User selected columns with custom headers
         let draggedItem = null;
         
-        // Default column config - basic product info only
+        // Default column config - works for both normal scrape and deep scrape
         // Other fields available in custom panel (⚙️ Customize Columns)
         const defaultColumns = [
             { field: '序号', header: '序号', enabled: true, isIndex: true },
-            { field: 'name', header: '品牌brand', enabled: true },
-            { field: 'title', header: '系列类型Series type', enabled: true }
+            { field: 'brand', header: '品牌brand', enabled: true },
+            { field: 'series', header: '系列Series', enabled: true },
+            { field: 'productName', header: '产品ProductName', enabled: true },
+            { field: 'name', header: 'Name', enabled: false },
+            { field: 'title', header: 'Title', enabled: false }
         ];
         
         async function scrape() {
@@ -307,6 +413,40 @@ HTML_TEMPLATE = """
             }
             
             document.getElementById('scrapeBtn').disabled = false;
+            document.getElementById('loading').classList.remove('show');
+        }
+        
+        // Deep Scrape: Category → Brands → Series → Products
+        async function deepScrape() {
+            const url = document.getElementById('urlInput').value.trim();
+            if (!url) { showStatus('Please enter a category URL'); return; }
+            
+            document.getElementById('scrapeBtn').disabled = true;
+            document.getElementById('deepScrapeBtn').disabled = true;
+            document.getElementById('loadingText').textContent = 'Deep scraping... This may take 2-5 minutes (Category → Brands → Series → Products)';
+            document.getElementById('loading').classList.add('show');
+            document.getElementById('results').classList.remove('show');
+            
+            try {
+                const res = await fetch('/api/deep-scrape', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({url})
+                });
+                const data = await res.json();
+                
+                if (data.error) {
+                    showStatus('Error: ' + data.error);
+                } else {
+                    displayResults(data);
+                }
+            } catch (e) {
+                showStatus('Error: ' + e.message);
+            }
+            
+            document.getElementById('scrapeBtn').disabled = false;
+            document.getElementById('deepScrapeBtn').disabled = false;
+            document.getElementById('loadingText').textContent = 'Scraping data... This may take 15-30 seconds';
             document.getElementById('loading').classList.remove('show');
         }
         
@@ -631,19 +771,100 @@ def api_scrape():
     url = data.get('url', '')
     
     if not url:
+        logger.warning("Scrape request with no URL")
         return jsonify({"error": "URL required"})
+    
+    logger.info(f"🔍 Starting scrape: {url[:60]}...")
     
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
     result = loop.run_until_complete(scrape_url(url))
     loop.close()
     
+    # Auto-export
+    product_count = len(result.get('products', []))
+    if product_count > 0:
+        auto_export(result, "scrape")
+        logger.info(f"✅ Scrape complete: {product_count} products")
+    
     return jsonify(result)
 
 
+@app.route('/api/deep-scrape', methods=['POST'])
+def api_deep_scrape():
+    """Deep scrape: Category → Brands → Series → Products"""
+    data = request.get_json()
+    url = data.get('url', '')
+    
+    if not url:
+        logger.warning("Deep scrape request with no URL")
+        return jsonify({"error": "URL required"})
+    
+    logger.info(f"🔥 Starting DEEP scrape: {url[:60]}...")
+    start_time = time.perf_counter()
+    
+    try:
+        from deep_scraper import DeepScraper
+        
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        
+        scraper = DeepScraper()
+        products = loop.run_until_complete(scraper.scrape_all(url, headless=True))
+        loop.close()
+        
+        elapsed = time.perf_counter() - start_time
+        result = {"products": products}
+        
+        # Auto-export
+        if len(products) > 0:
+            auto_export(result, "deep_scrape")
+            logger.info(f"✅ Deep scrape complete: {len(products)} products in {elapsed:.1f}s")
+        
+        return jsonify(result)
+    except Exception as e:
+        logger.error(f"❌ Deep scrape error: {str(e)}")
+        return jsonify({"error": str(e)})
+
+
+@app.route('/api/logs', methods=['GET'])
+def api_logs():
+    """Get recent logs"""
+    try:
+        log_file = os.path.join(LOG_DIR, f"app_{datetime.now().strftime('%Y%m%d')}.log")
+        if os.path.exists(log_file):
+            with open(log_file, 'r', encoding='utf-8') as f:
+                lines = f.readlines()[-100:]  # Last 100 lines
+            return jsonify({"logs": lines})
+    except Exception as e:
+        return jsonify({"error": str(e)})
+    return jsonify({"logs": []})
+
+
+@app.route('/api/status', methods=['GET'])
+def api_status():
+    """Server status endpoint"""
+    return jsonify({
+        "status": "running",
+        "time": datetime.now().isoformat(),
+        "hostname": "192.168.1.11",
+        "port": 5000
+    })
+
+
 if __name__ == '__main__':
-    print("=" * 50)
-    print("  AIHUISHOU SCRAPER")
-    print("  Open: http://localhost:5000")
-    print("=" * 50)
+    # Startup banner
+    print()
+    print("╔" + "═" * 48 + "╗")
+    print("║" + "  AIHUISHOU SCRAPER SERVER".center(48) + "║")
+    print("╠" + "═" * 48 + "╣")
+    print("║" + f"  🌐 Local:   http://localhost:5000".ljust(48) + "║")
+    print("║" + f"  🌐 Network: http://192.168.1.11:5000".ljust(48) + "║")
+    print("║" + f"  📁 Logs:    {LOG_DIR}/".ljust(48) + "║")
+    print("║" + f"  📦 Exports: exports/".ljust(48) + "║")
+    print("╚" + "═" * 48 + "╝")
+    print()
+    
+    logger.info("🚀 Server starting...")
     app.run(debug=True, host='0.0.0.0', port=5000)
+
