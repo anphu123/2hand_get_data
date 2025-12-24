@@ -21,3 +21,20 @@
 11:41:40 | INFO    | ✅ Deep scrape complete: 208 products in 242.8s
 11:41:40 | INFO    | [113737-0256] ✅ 200 | 242826ms
 11:41:40 | DEBUG   | [113737-0256] Response size: 64.9KB
+11:47:53 | INFO    | 🚀 Server starting...
+11:50:33 | INFO    | 🚀 Server starting...
+11:50:52 | INFO    | 🚀 Server starting...
+11:52:19 | INFO    | [115219-7728] ▶ GET /
+11:52:19 | INFO    | [115219-7728] ✅ 200 | 4ms
+13:31:46 | INFO    | [133146-7728] ▶ GET /
+13:31:46 | INFO    | [133146-7728] ✅ 200 | 23ms
+13:31:49 | INFO    | [133149-7728] ▶ POST /api/deep-scrape
+13:31:49 | DEBUG   | [133149-7728] Body: {"url": "https://m.aihuishou.com/n/#/category?amp%3BsubFrontCategoryId=145&cityId=31&cityName=%E5%8C%97%E4%BA%AC%E5%B8%82&cityOriginName=%E5%8C%97%E4%BA%AC%E5%B8%82&frontCategoryId=165&subFrontCategor
+13:31:49 | INFO    | 🔥 Starting DEEP scrape: https://m.aihuishou.com/n/#/category?amp%3BsubFrontCategoryI...
+13:32:57 | INFO    | 📁 Auto-exported: exports\deep_scrape_20251224_133257.json (152 items)
+13:32:57 | INFO    | ✅ Deep scrape complete: 152 products in 67.9s
+13:32:57 | INFO    | [133149-7728] ✅ 200 | 67925ms
+13:32:57 | DEBUG   | [133149-7728] Response size: 51.4KB
+13:37:13 | INFO    | 🚀 Server starting...
+13:37:22 | INFO    | [133722-0928] ▶ GET /
+13:37:22 | INFO    | [133722-0928] ✅ 200 | 3ms

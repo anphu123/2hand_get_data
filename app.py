@@ -852,6 +852,230 @@ def api_status():
     })
 
 
+# ============ DATA VIEWER ============
+@app.route('/api/exports', methods=['GET'])
+def api_exports():
+    """List all exported JSON files"""
+    export_dir = "exports"
+    if not os.path.exists(export_dir):
+        return jsonify({"files": []})
+    
+    files = []
+    for filename in os.listdir(export_dir):
+        if filename.endswith('.json'):
+            filepath = os.path.join(export_dir, filename)
+            stat = os.stat(filepath)
+            files.append({
+                "name": filename,
+                "size": stat.st_size,
+                "sizeKB": round(stat.st_size / 1024, 1),
+                "modified": datetime.fromtimestamp(stat.st_mtime).isoformat()
+            })
+    
+    files.sort(key=lambda x: x['modified'], reverse=True)
+    return jsonify({"files": files})
+
+
+@app.route('/api/exports/<filename>', methods=['GET'])
+def api_export_file(filename):
+    """Get contents of a specific export file"""
+    export_dir = "exports"
+    filepath = os.path.join(export_dir, filename)
+    
+    if not os.path.exists(filepath) or not filename.endswith('.json'):
+        return jsonify({"error": "File not found"}), 404
+    
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        # Count items
+        count = 0
+        if isinstance(data, dict) and 'products' in data:
+            count = len(data.get('products', []))
+            data = data['products']  # Return products directly
+        elif isinstance(data, list):
+            count = len(data)
+        
+        return jsonify({"count": count, "data": data})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+DATA_VIEWER_TEMPLATE = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📦 Data Viewer</title>
+    <style>
+        :root { --bg: #0a0a1a; --card: #12122a; --accent: #00d4ff; --text: #fff; --muted: #8892b0; --border: rgba(255,255,255,0.08); }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 30px 20px; }
+        .container { max-width: 1600px; margin: 0 auto; }
+        h1 { color: var(--accent); margin-bottom: 20px; }
+        .nav { margin-bottom: 20px; display: flex; gap: 15px; }
+        .nav a { color: var(--accent); text-decoration: none; padding: 8px 16px; border: 1px solid var(--accent); border-radius: 8px; }
+        .nav a:hover { background: var(--accent); color: var(--bg); }
+        .grid { display: grid; grid-template-columns: 300px 1fr; gap: 20px; }
+        .sidebar { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; height: fit-content; }
+        .file-list { list-style: none; }
+        .file-item { padding: 12px; border-bottom: 1px solid var(--border); cursor: pointer; transition: all 0.2s; }
+        .file-item:hover { background: rgba(0,212,255,0.1); }
+        .file-item.active { background: rgba(0,212,255,0.2); border-left: 3px solid var(--accent); }
+        .file-name { font-weight: 600; margin-bottom: 4px; }
+        .file-meta { font-size: 12px; color: var(--muted); }
+        .main { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+        .stats { display: flex; gap: 20px; margin-bottom: 20px; flex-wrap: wrap; }
+        .stat { background: rgba(0,212,255,0.1); padding: 15px 25px; border-radius: 10px; }
+        .stat-value { font-size: 24px; font-weight: 700; color: var(--accent); }
+        .stat-label { font-size: 12px; color: var(--muted); }
+        table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        th, td { padding: 10px; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--accent); background: rgba(0,212,255,0.05); position: sticky; top: 0; }
+        tr:hover { background: rgba(0,212,255,0.03); }
+        .data-container { max-height: 70vh; overflow: auto; }
+        .loading { text-align: center; padding: 50px; color: var(--muted); }
+        .search { width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 8px; background: rgba(0,0,0,0.3); color: var(--text); margin-bottom: 15px; }
+        img { max-width: 60px; max-height: 60px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="/">🔍 Scraper</a>
+            <a href="/data">📦 Data Viewer</a>
+        </div>
+        <h1>📦 Collected Data Viewer</h1>
+        
+        <div class="grid">
+            <div class="sidebar">
+                <h3 style="margin-bottom: 15px;">📁 Export Files</h3>
+                <ul class="file-list" id="fileList">
+                    <li class="loading">Loading...</li>
+                </ul>
+            </div>
+            
+            <div class="main">
+                <input type="text" class="search" id="search" placeholder="🔍 Search products..." oninput="filterData()">
+                
+                <div class="stats" id="stats"></div>
+                
+                <div class="data-container">
+                    <table>
+                        <thead id="tableHead"></thead>
+                        <tbody id="tableBody">
+                            <tr><td class="loading">Select a file to view data</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let currentData = [];
+        let currentFile = '';
+        
+        async function loadFiles() {
+            const res = await fetch('/api/exports');
+            const {files} = await res.json();
+            
+            const list = document.getElementById('fileList');
+            if (!files.length) {
+                list.innerHTML = '<li class="loading">No files found</li>';
+                return;
+            }
+            
+            list.innerHTML = files.map(f => `
+                <li class="file-item" data-file="${f.name}" onclick="loadFile('${f.name}')">
+                    <div class="file-name">${f.name}</div>
+                    <div class="file-meta">${f.sizeKB} KB • ${new Date(f.modified).toLocaleString()}</div>
+                </li>
+            `).join('');
+            
+            // Auto-load first file
+            if (files.length) loadFile(files[0].name);
+        }
+        
+        async function loadFile(filename) {
+            currentFile = filename;
+            
+            // Update active state
+            document.querySelectorAll('.file-item').forEach(el => el.classList.remove('active'));
+            document.querySelector(`[data-file="${filename}"]`)?.classList.add('active');
+            
+            document.getElementById('tableBody').innerHTML = '<tr><td class="loading">Loading...</td></tr>';
+            
+            const res = await fetch('/api/exports/' + filename);
+            const {count, data} = await res.json();
+            
+            currentData = data || [];
+            
+            // Stats
+            const brands = [...new Set(currentData.map(p => p.brand).filter(Boolean))];
+            const series = [...new Set(currentData.map(p => p.series).filter(Boolean))];
+            
+            document.getElementById('stats').innerHTML = `
+                <div class="stat"><div class="stat-value">${count}</div><div class="stat-label">Products</div></div>
+                <div class="stat"><div class="stat-value">${brands.length}</div><div class="stat-label">Brands</div></div>
+                <div class="stat"><div class="stat-value">${series.length}</div><div class="stat-label">Series</div></div>
+            `;
+            
+            renderTable(currentData);
+        }
+        
+        function renderTable(data) {
+            if (!data.length) {
+                document.getElementById('tableBody').innerHTML = '<tr><td>No data</td></tr>';
+                return;
+            }
+            
+            const cols = ['brand', 'series', 'collection', 'productName', 'subTitle', 'productId', 'imageUrl'];
+            const headers = ['Brand', 'Series', 'Collection', 'Product Name', 'Spec', 'ID', 'Image'];
+            
+            document.getElementById('tableHead').innerHTML = `<tr>${headers.map(h => `<th>${h}</th>`).join('')}</tr>`;
+            
+            document.getElementById('tableBody').innerHTML = data.slice(0, 500).map(item => `
+                <tr>
+                    ${cols.map(c => {
+                        let val = item[c] || '-';
+                        if (c === 'imageUrl' && val !== '-') {
+                            return `<td><img src="${val}" loading="lazy" onerror="this.style.display='none'"></td>`;
+                        }
+                        return `<td>${String(val).substring(0, 50)}</td>`;
+                    }).join('')}
+                </tr>
+            `).join('');
+        }
+        
+        function filterData() {
+            const q = document.getElementById('search').value.toLowerCase();
+            if (!q) {
+                renderTable(currentData);
+                return;
+            }
+            
+            const filtered = currentData.filter(item => 
+                Object.values(item).some(v => String(v).toLowerCase().includes(q))
+            );
+            renderTable(filtered);
+        }
+        
+        loadFiles();
+    </script>
+</body>
+</html>
+"""
+
+
+@app.route('/data')
+def data_viewer():
+    """Data viewer page"""
+    return DATA_VIEWER_TEMPLATE
+
+
 if __name__ == '__main__':
     # Startup banner
     print()

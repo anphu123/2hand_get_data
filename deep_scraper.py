@@ -38,9 +38,10 @@ class DeepScraper:
     - 4 levels: Category → Brand → Collection → Products
     """
     
-    WAIT_PAGE = 2.5
-    WAIT_SCROLL = 0.4
-    MAX_SCROLL = 5
+    WAIT_PAGE = 1.5      # Reduced from 2.5
+    WAIT_SCROLL = 0.3     # Reduced from 0.4
+    MAX_SCROLL = 3        # Reduced from 5
+    MAX_CONCURRENT = 3    # Parallel brand processing
     
     def __init__(self):
         self.brands: List[Dict] = []
@@ -86,26 +87,34 @@ class DeepScraper:
                 await browser.close()
                 return self.products
             
-            # LEVEL 2+: Products (auto-detect 3 or 4 levels)
-            for i, brand in enumerate(self.brands):
-                self.current_brand = brand
-                brand_name = brand.get('name', 'Unknown')
-                log("INFO", f"Brand [{i+1}/{len(self.brands)}] {brand_name}")
-                
-                # Try spu-collection first (4-level), fallback to spu-list (3-level)
-                collections = await self._get_collections(page, brand)
-                
-                if collections:
-                    # 4-level path: Brand → Collections → Products
-                    log("INFO", f"Found {len(collections)} collections (4-level)", 1)
-                    for j, collection in enumerate(collections):
-                        self.current_collection = collection
-                        log("INFO", f"Collection [{j+1}/{len(collections)}] {collection.get('title', '')[:30]}", 2)
-                        await self._scrape_products_from_collection(page, brand, collection)
-                else:
-                    # 3-level path: Brand → Products
-                    log("INFO", "Direct products (3-level)", 1)
-                    await self._scrape_products_direct(page, brand)
+            # LEVEL 2+: Products (parallel processing)
+            log("INFO", f"Processing {len(self.brands)} brands (parallel x{self.MAX_CONCURRENT})...")
+            
+            semaphore = asyncio.Semaphore(self.MAX_CONCURRENT)
+            
+            async def process_brand(idx: int, brand: Dict):
+                async with semaphore:
+                    # Create new page for each parallel task
+                    brand_page = await context.new_page()
+                    try:
+                        brand_name = brand.get('name', 'Unknown')
+                        log("INFO", f"Brand [{idx+1}/{len(self.brands)}] {brand_name}")
+                        
+                        # Try spu-collection first (4-level), fallback to spu-list (3-level)
+                        collections = await self._get_collections(brand_page, brand)
+                        
+                        if collections:
+                            log("INFO", f"Found {len(collections)} collections", 1)
+                            for collection in collections:
+                                await self._scrape_products_from_collection(brand_page, brand, collection)
+                        else:
+                            await self._scrape_products_direct(brand_page, brand)
+                    finally:
+                        await brand_page.close()
+            
+            # Run all brands in parallel with semaphore limit
+            tasks = [process_brand(i, brand) for i, brand in enumerate(self.brands)]
+            await asyncio.gather(*tasks)
             
             await browser.close()
         
@@ -163,8 +172,8 @@ class DeepScraper:
                 pass
         
         page.on("response", lambda r: asyncio.create_task(capture(r)))
-        await page.goto(url, timeout=60000, wait_until="domcontentloaded")
-        await asyncio.sleep(self.WAIT_PAGE)
+        await page.goto(url, timeout=30000, wait_until="domcontentloaded")
+        await asyncio.sleep(1.5)  # Reduced
         await self._scroll(page, 3)
         
         self.brands = captured_brands
@@ -207,8 +216,8 @@ class DeepScraper:
         page.on("response", lambda r: asyncio.create_task(capture(r)))
         
         try:
-            await page.goto(collection_url, timeout=20000, wait_until="domcontentloaded")
-            await asyncio.sleep(1.5)
+            await page.goto(collection_url, timeout=10000, wait_until="domcontentloaded")
+            await asyncio.sleep(1.0)  # Reduced
             await self._scroll(page, 2)
         except:
             pass
