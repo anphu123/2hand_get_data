@@ -1,0 +1,65 @@
+{
+    "code": 0,
+    "resultMessage": "",
+    "data": [
+        {
+            "id": 225358,
+            "name": "苹果 iPhone 17",
+            "maxPrice": 5460,
+            "imageUrl": "https://sr.aihuishou.com/image/6334753585710430212.png",
+            "bannerImageUrl": null,
+            "categoryId": 1,
+            "brandId": 52,
+            "bizType": 1,
+            "type": 0,
+            "isEnvironmentalRecycling": false,
+            "link": null,
+            "marketingTagText": null
+        },
+        {
+            "id": 225361,
+            "name": "苹果 iPhone 17 Pro",
+            "maxPrice": 8800,
+            "imageUrl": "https://sr.aihuishou.com/image/7420830812545792684.png",
+            "bannerImageUrl": null,
+            "categoryId": 1,
+            "brandId": 52,
+            "bizType": 1,
+            "type": 0,
+            "isEnvironmentalRecycling": false,
+            "link": null,
+            "marketingTagText": null
+        },
+        {
+            "id": 225362,
+            "name": "苹果 iPhone 17 Pro Max",
+            "maxPrice": 11800,
+            "imageUrl": "https://sr.aihuishou.com/image/8355580892671073691.png",
+            "bannerImageUrl": null,
+            "categoryId": 1,
+            "brandId": 52,
+            "bizType": 1,
+            "type": 0,
+            "isEnvironmentalRecycling": false,
+            "link": null,
+            "marketingTagText": null
+        },
+        {
+            "id": 43510,
+            "name": "苹果 iPhone 13",
+            "maxPrice": 1600,
+            "imageUrl": "https://sr.aihuishou.com/image/6969548268646858514.png",
+            "bannerImageUrl": null,
+            "categoryId": 1,
+            "brandId": 52,
+            "bizType": 1,
+            "type": 0,
+            "isEnvironmentalRecycling": false,
+            "link": null,
+            "marketingTagText": null
+        }
+    ],
+    "page": 0,
+    "pageSize": 20,
+    "totalCount": 50
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "frontCategoryId": 6,
+    "groups": [
+      {
+        "groupName": "Hot Brands",
+        "details": [
+          {
+            "id": 52,
+            "name": "苹果",
+            "iconUrl": "https://sr.aihuishou.com/image/6000703795515611903.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 7,
+            "name": "三星",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220172330_4597.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 184,
+            "name": "小米",
+            "iconUrl": "https://sr.aihuishou.com/image/7407198171234548055.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 24,
+            "name": "魅族",
+            "iconUrl": "https://sr.aihuishou.com/image/1207251186010976578.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 9,
+            "name": "华为",
+            "iconUrl": "https://sr.aihuishou.com/image/2016353327257728710.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 19,
+            "name": "诺基亚 ",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220173259_7189.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 21,
+            "name": "酷派 ",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220173313_7857.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 103,
+            "name": "华硕",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220173736_2700.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 342,
+            "name": "努比亚",
+            "iconUrl": "https://sr.aihuishou.com/image/7302922589803503495.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 4,
+            "name": "OPPO",
+            "iconUrl": "https://sr.aihuishou.com/image/2212752856657673465.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 1,
+            "name": "HTC",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220173423_5522.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 8,
+            "name": "中兴 ",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220173407_6959.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 365,
+            "name": "乐视",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220173443_5256.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 15,
+            "name": "朵唯",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220173528_9751.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 18,
+            "name": "联想",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220173602_6471.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 3,
+            "name": "LG",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220173635_3653.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 20,
+            "name": "谷歌",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220173618_2216.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 14,
+            "name": "摩托罗拉 ",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220173705_7784.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 17,
+            "name": "索尼",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220173720_3938.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 16,
+            "name": "vivo",
+            "iconUrl": "https://sr.aihuishou.com/image/4640418062995824890.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 356,
+            "name": "锤子",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220173833_9604.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 278,
+            "name": "金立",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220173915_1394.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 357,
+            "name": "一加",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220173900_8233.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 661,
+            "name": "iQOO",
+            "iconUrl": "https://sr.aihuishou.com/image/3176085768801859374.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 484,
+            "name": "荣耀",
+            "iconUrl": "https://sr.aihuishou.com/image/243058405292767922.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 538,
+            "name": "realme",
+            "iconUrl": "https://sr.aihuishou.com/image/20190531163940_5651.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 25,
+            "name": "黑莓 ",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220174743_8067.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 391,
+            "name": "美图",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220174729_6509.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 497,
+            "name": "中国移动",
+            "iconUrl": "https://sr.aihuishou.com/image/20181225142016_2662.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 1753,
+            "name": "Hi nova",
+            "iconUrl": "https://sr.aihuishou.com/image/5986188273857904209.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 496,
+            "name": "海信",
+            "iconUrl": "https://sr.aihuishou.com/image/20181105175928_2218.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 1265,
+            "name": "麦芒",
+            "iconUrl": "https://sr.aihuishou.com/image/260269711512843535.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 1219,
+            "name": "黑鲨",
+            "iconUrl": "https://sr.aihuishou.com/image/544849163445207062.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 460,
+            "name": "360",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220182240_0273.png",
+            "marketingTagText": null
+          },
+          {
+            "id": 266,
+            "name": "其他品牌",
+            "iconUrl": "https://sr.aihuishou.com/image/20181220181635_4127.png",
+            "marketingTagText": null
+          }
+        ]
+      }
+    ]
+  }
+]

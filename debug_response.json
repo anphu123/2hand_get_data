@@ -1,0 +1,502 @@
+{
+  "code": 0,
+  "resultMessage": "",
+  "data": {
+    "couponPrice": 210,
+    "productId": 43510,
+    "productName": "苹果 iPhone 13",
+    "templateType": 2,
+    "thirdTemplateTips": null,
+    "quickInquiry": {
+      "id": 183,
+      "items": [
+        {
+          "id": 822,
+          "name": "正常进入桌面",
+          "description": null,
+          "value": 0,
+          "ppvs": [
+            {
+              "id": 2026,
+              "name": "正常开机进入桌面",
+              "tags": []
+            }
+          ],
+          "exclusionPpvs": [
+            2124,
+            17788,
+            17789
+          ],
+          "isNoAdditional": false,
+          "noAdditionalTips": null,
+          "isOverProtection": false,
+          "isPerfect": false,
+          "isEnvironmentalRecycling": false,
+          "illustrationContent": null
+        },
+        {
+          "id": 823,
+          "name": "全新包装未拆封",
+          "description": "需在保修期内，配件齐全未使用。为结果准确，质检时会进行拆封。全新机有可能出现“后封机”和出厂瑕疵问题。",
+          "value": 1,
+          "ppvs": [
+            {
+              "id": 2026,
+              "name": "正常开机进入桌面",
+              "tags": []
+            },
+            {
+              "id": 2045,
+              "name": "通话正常",
+              "tags": []
+            },
+            {
+              "id": 2067,
+              "name": "无维修无受潮无拆机",
+              "tags": []
+            },
+            {
+              "id": 2100,
+              "name": "账号可退出（请您先退出再回收）",
+              "tags": [
+                {
+                  "code": "0010",
+                  "name": "本机选中"
+                }
+              ]
+            },
+            {
+              "id": 2102,
+              "name": "指纹/面容/虹膜功能正常",
+              "tags": []
+            },
+            {
+              "id": 2106,
+              "name": "充电/快充/无线充电正常",
+              "tags": []
+            },
+            {
+              "id": 2108,
+              "name": "wifi/蓝牙/nfc/指南针功能正常",
+              "tags": []
+            },
+            {
+              "id": 2114,
+              "name": "显示完美，无瑕疵",
+              "tags": []
+            },
+            {
+              "id": 2118,
+              "name": "屏幕完美无划痕",
+              "tags": []
+            },
+            {
+              "id": 2124,
+              "name": "全新包装未拆封",
+              "tags": []
+            },
+            {
+              "id": 2134,
+              "name": "机身无弯曲",
+              "tags": []
+            },
+            {
+              "id": 3168,
+              "name": "触摸功能正常",
+              "tags": []
+            },
+            {
+              "id": 6947,
+              "name": "光线、距离感应正常",
+              "tags": []
+            },
+            {
+              "id": 6949,
+              "name": "振动功能正常",
+              "tags": []
+            },
+            {
+              "id": 6982,
+              "name": "相机画面正常，无维修或更换",
+              "tags": []
+            },
+            {
+              "id": 8712,
+              "name": "无重启或卡死情况",
+              "tags": []
+            },
+            {
+              "id": 9507,
+              "name": "正常连接电脑",
+              "tags": []
+            },
+            {
+              "id": 9625,
+              "name": "还原激活正常",
+              "tags": []
+            },
+            {
+              "id": 11210,
+              "name": "侧键正常",
+              "tags": []
+            },
+            {
+              "id": 12170,
+              "name": "无记录/官方更换部件",
+              "tags": []
+            },
+            {
+              "id": 13842,
+              "name": "声音功能正常",
+              "tags": []
+            }
+          ],
+          "exclusionPpvs": [
+            2984,
+            11222,
+            20636,
+            12124,
+            2075
+          ],
+          "isNoAdditional": false,
+          "noAdditionalTips": null,
+          "isOverProtection": false,
+          "isPerfect": false,
+          "isEnvironmentalRecycling": false,
+          "illustrationContent": null
+        },
+        {
+          "id": 824,
+          "name": "无法开机/无法进入桌面",
+          "description": "无法回收",
+          "value": 2,
+          "ppvs": [
+            {
+              "id": 2027,
+              "name": "无法开机进入桌面",
+              "tags": [
+                {
+                  "code": "0003",
+                  "name": "不回收项"
+                },
+                {
+                  "code": "0007",
+                  "name": "环保回收"
+                },
+                {
+                  "code": "0013",
+                  "name": "不可开机项"
+                }
+              ]
+            },
+            {
+              "id": 2047,
+              "name": "信号异常/无法通话/不读卡/无基带",
+              "tags": []
+            },
+            {
+              "id": 2069,
+              "name": "屏幕维修，且主板维修/受潮",
+              "tags": [
+                {
+                  "code": "0005",
+                  "name": "主板维修"
+                }
+              ]
+            },
+            {
+              "id": 2101,
+              "name": "无法退出（为了您的信息安全，此类机器无法回收）",
+              "tags": [
+                {
+                  "code": "0003",
+                  "name": "不回收项"
+                }
+              ]
+            },
+            {
+              "id": 2103,
+              "name": "指纹/面容/虹膜无法录入或识别",
+              "tags": []
+            },
+            {
+              "id": 2107,
+              "name": "充电/快充/无线充无反应或接触不良",
+              "tags": []
+            },
+            {
+              "id": 2109,
+              "name": "wifi/蓝牙/指南针/nfc无法打开或连接",
+              "tags": []
+            },
+            {
+              "id": 3304,
+              "name": "屏幕不显示（仅支持物流回收）",
+              "tags": [
+                {
+                  "code": "0004",
+                  "name": "屏幕维修"
+                },
+                {
+                  "code": "0011",
+                  "name": "本机隐藏"
+                }
+              ]
+            },
+            {
+              "id": 2122,
+              "name": "屏幕显示区域磕碰掉漆/裂缝/缺角",
+              "tags": [
+                {
+                  "code": "0004",
+                  "name": "屏幕维修"
+                }
+              ]
+            },
+            {
+              "id": 6873,
+              "name": "外壳破损、裂缝或缺失",
+              "tags": [
+                {
+                  "code": "0006",
+                  "name": "外壳维修"
+                }
+              ]
+            },
+            {
+              "id": 2135,
+              "name": "机身弯曲",
+              "tags": []
+            },
+            {
+              "id": 3169,
+              "name": "触摸失灵/延迟",
+              "tags": []
+            },
+            {
+              "id": 6948,
+              "name": "光线/距离感应不正常",
+              "tags": []
+            },
+            {
+              "id": 6950,
+              "name": "振动功能异常",
+              "tags": []
+            },
+            {
+              "id": 7778,
+              "name": "摄像头/闪光灯缺失，或无法打开",
+              "tags": []
+            },
+            {
+              "id": 8713,
+              "name": "有自动重启或卡死",
+              "tags": []
+            },
+            {
+              "id": 9508,
+              "name": "无法连接电脑",
+              "tags": []
+            },
+            {
+              "id": 10204,
+              "name": "无法激活或还原",
+              "tags": [
+                {
+                  "code": "0003",
+                  "name": "不回收项"
+                },
+                {
+                  "code": "0007",
+                  "name": "环保回收"
+                }
+              ]
+            },
+            {
+              "id": 11212,
+              "name": "侧键按压无反馈或失灵",
+              "tags": []
+            },
+            {
+              "id": 12171,
+              "name": "更换二手部件",
+              "tags": []
+            },
+            {
+              "id": 13843,
+              "name": "无声或声音异常（听筒/外放/录音）",
+              "tags": []
+            }
+          ],
+          "exclusionPpvs": [],
+          "isNoAdditional": true,
+          "noAdditionalTips": "无法回收",
+          "isOverProtection": false,
+          "isPerfect": false,
+          "isEnvironmentalRecycling": true,
+          "illustrationContent": null
+        },
+        {
+          "id": 825,
+          "name": "开机密码无法解除/监管机",
+          "description": "无法回收",
+          "value": null,
+          "ppvs": [
+            {
+              "id": 9630,
+              "name": "开机密码无法解除/监管机",
+              "tags": [
+                {
+                  "code": "0003",
+                  "name": "不回收项"
+                },
+                {
+                  "code": "0007",
+                  "name": "环保回收"
+                },
+                {
+                  "code": "0013",
+                  "name": "不可开机项"
+                }
+              ]
+            },
+            {
+              "id": 2047,
+              "name": "信号异常/无法通话/不读卡/无基带",
+              "tags": []
+            },
+            {
+              "id": 2067,
+              "name": "无维修无受潮无拆机",
+              "tags": []
+            },
+            {
+              "id": 2100,
+              "name": "账号可退出（请您先退出再回收）",
+              "tags": [
+                {
+                  "code": "0010",
+                  "name": "本机选中"
+                }
+              ]
+            },
+            {
+              "id": 2103,
+              "name": "指纹/面容/虹膜无法录入或识别",
+              "tags": []
+            },
+            {
+              "id": 2107,
+              "name": "充电/快充/无线充无反应或接触不良",
+              "tags": []
+            },
+            {
+              "id": 2109,
+              "name": "wifi/蓝牙/指南针/nfc无法打开或连接",
+              "tags": []
+            },
+            {
+              "id": 2114,
+              "name": "显示完美，无瑕疵",
+              "tags": []
+            },
+            {
+              "id": 2122,
+              "name": "屏幕显示区域磕碰掉漆/裂缝/缺角",
+              "tags": [
+                {
+                  "code": "0004",
+                  "name": "屏幕维修"
+                }
+              ]
+            },
+            {
+              "id": 6873,
+              "name": "外壳破损、裂缝或缺失",
+              "tags": [
+                {
+                  "code": "0006",
+                  "name": "外壳维修"
+                }
+              ]
+            },
+            {
+              "id": 2135,
+              "name": "机身弯曲",
+              "tags": []
+            },
+            {
+              "id": 3169,
+              "name": "触摸失灵/延迟",
+              "tags": []
+            },
+            {
+              "id": 6948,
+              "name": "光线/距离感应不正常",
+              "tags": []
+            },
+            {
+              "id": 6950,
+              "name": "振动功能异常",
+              "tags": []
+            },
+            {
+              "id": 7778,
+              "name": "摄像头/闪光灯缺失，或无法打开",
+              "tags": []
+            },
+            {
+              "id": 8713,
+              "name": "有自动重启或卡死",
+              "tags": []
+            },
+            {
+              "id": 9508,
+              "name": "无法连接电脑",
+              "tags": []
+            },
+            {
+              "id": 10204,
+              "name": "无法激活或还原",
+              "tags": [
+                {
+                  "code": "0003",
+                  "name": "不回收项"
+                },
+                {
+                  "code": "0007",
+                  "name": "环保回收"
+                }
+              ]
+            },
+            {
+              "id": 11212,
+              "name": "侧键按压无反馈或失灵",
+              "tags": []
+            },
+            {
+              "id": 12171,
+              "name": "更换二手部件",
+              "tags": []
+            },
+            {
+              "id": 13843,
+              "name": "无声或声音异常（听筒/外放/录音）",
+              "tags": []
+            }
+          ],
+          "exclusionPpvs": [],
+          "isNoAdditional": true,
+          "noAdditionalTips": "无法回收",
+          "isOverProtection": false,
+          "isPerfect": false,
+          "isEnvironmentalRecycling": true,
+          "illustrationContent": null
+        }
+      ],
+      "name": "使用情况",
+      "type": 0
+    }
+  },
+  "debugMessage": null
+}

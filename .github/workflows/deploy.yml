@@ -1,0 +1,126 @@
+name: Deploy Aihuishou Scraper
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+env:
+  SERVER_IP: 192.168.1.49
+  SERVER_PORT: 5000
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        playwright install chromium
+        playwright install-deps
+    
+    - name: Test app
+      run: |
+        timeout 15 python app.py &
+        sleep 8
+        curl -s http://localhost:5000 | head -20
+        echo "App started successfully!"
+    
+    - name: Build Docker image
+      run: |
+        docker build -t aihuishou-scraper:latest .
+        docker tag aihuishou-scraper:latest aihuishou-scraper:${{ github.sha }}
+    
+    - name: Save Docker image
+      run: |
+        docker save aihuishou-scraper:latest | gzip > aihuishou-scraper.tar.gz
+    
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: docker-image
+        path: aihuishou-scraper.tar.gz
+        retention-days: 7
+
+  # Deploy to local server via SSH (requires SSH secrets)
+  deploy-ssh:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && vars.ENABLE_SSH_DEPLOY == 'true'
+    
+    steps:
+    - name: Download artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: docker-image
+    
+    - name: Deploy to server
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USER }}
+        key: ${{ secrets.SSH_KEY }}
+        source: "aihuishou-scraper.tar.gz"
+        target: "/tmp/"
+    
+    - name: Run on server
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USER }}
+        key: ${{ secrets.SSH_KEY }}
+        script: |
+          cd /tmp
+          gunzip -f aihuishou-scraper.tar.gz
+          docker load < aihuishou-scraper.tar
+          docker stop aihuishou-scraper || true
+          docker rm aihuishou-scraper || true
+          docker run -d --name aihuishou-scraper -p 5000:5000 --restart unless-stopped aihuishou-scraper:latest
+          echo "Deployed! Access at http://${{ env.SERVER_IP }}:${{ env.SERVER_PORT }}"
+
+  # Manual deploy instructions
+  deploy-manual:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: Download artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: docker-image
+    
+    - name: Deploy Instructions
+      run: |
+        echo "=============================================="
+        echo "  DEPLOYMENT - AIHUISHOU SCRAPER"
+        echo "=============================================="
+        echo ""
+        echo "Docker image built: aihuishou-scraper.tar.gz"
+        echo ""
+        echo "=== LOCAL DEPLOY (Windows) ==="
+        echo "1. Download artifact from GitHub Actions"
+        echo "2. Extract and load:"
+        echo "   gunzip aihuishou-scraper.tar.gz"
+        echo "   docker load < aihuishou-scraper.tar"
+        echo "3. Run:"
+        echo "   docker run -d -p 5000:5000 --name scraper aihuishou-scraper"
+        echo "4. Access: http://192.168.1.49:5000"
+        echo ""
+        echo "=== SSH DEPLOY (Auto) ==="
+        echo "Add these secrets to your GitHub repo:"
+        echo "  SSH_HOST: 192.168.1.49"
+        echo "  SSH_USER: your_username"
+        echo "  SSH_KEY: your_private_key"
+        echo "Add variable: ENABLE_SSH_DEPLOY = true"
+        echo ""
+        echo "=============================================="
